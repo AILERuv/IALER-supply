@@ -24,19 +24,7 @@ export default (() => {
 			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/6123949e957019001e284458/images/favicon270.svg?v=2021-09-21T16:18:07.731Z"} />
 			<meta name={"msapplication-TileColor"} content={"#000848"} />
 		</Helmet>
-		<Image
-			position="absolute"
-			bottom="auto"
-			md-width="600px"
-			md-top="300px"
-			lg-right="-200px"
-			lg-top="0px"
-			src="https://uploads.quarkly.io/6123949e957019001e284458/images/backgroung-hero.svg?v=2021-09-21T22:07:12.314Z"
-			right="0px"
-			top="130px"
-			z-index="1"
-		/>
-		<Section background="linear-gradient(264.47deg, #000848 29.39%, #000848 93.49%)" padding="36px 0 36px 0" quarkly-title="Header">
+		<Section background="linear-gradient(264.47deg,#ff8f00 29.39%,#000000 93.49%)" padding="36px 0 36px 0" quarkly-title="Header">
 			<Override slot="SectionContent" flex-direction="row" />
 			<Box
 				empty-border-style="solid"
@@ -147,7 +135,7 @@ export default (() => {
 				</Components.QuarklycommunityKitMobileSidePanel>
 			</Box>
 		</Section>
-		<Section background="linear-gradient(264.47deg, #000848 29.39%, #000848 93.49%)" padding="36px 0 80px 0" quarkly-title="HeroBlock">
+		<Section background="linear-gradient(264.47deg,#db6f00 29.39%,#ff9000 93.49%)" padding="36px 0 80px 0" quarkly-title="HeroBlock">
 			<Override
 				slot="SectionContent"
 				md-z-index="7"
@@ -281,22 +269,27 @@ export default (() => {
 				empty-border-style="solid"
 				width="30%"
 				align-items="center"
-				justify-content="flex-end"
+				justify-content="center"
 				md-order="-1"
+				background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17:11:09.041Z) 0% 0% /auto repeat scroll padding-box"
+				flex-direction="row"
 			>
 				<Image
 					lg-max-height="400px"
 					width="100%"
 					max-height="450px"
 					md-margin="0px 0px 30px 0px"
-					src="https://uploads.quarkly.io/6123949e957019001e284458/images/logos_foundation.svg?v=2021-10-05T09:15:03.700Z"
+					src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17:11:09.041Z"
 					lg-position="relative"
 					lg-left="-5px"
 					max-width="100%"
+					background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17:11:09.041Z) 0% 0% /auto repeat scroll padding-box"
+					srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=3200 3200w"
+					sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
 				/>
 			</Box>
 		</Section>
-		<Section background="--color-indigo" padding="100px 0 0px 0" md-padding="40px 0 0px 0">
+		<Section background="--color-dark" padding="100px 0 0px 0" md-padding="40px 0 0px 0">
 			<Override slot="SectionContent" flex-direction="row" md-flex-wrap="wrap" />
 			<Box
 				empty-border-color="LightGray"
@@ -536,6 +529,7 @@ export default (() => {
 			background=",--color-indigo url(https://uploads.quarkly.io/6123949e957019001e284458/images/backfooter.svg?v=2021-08-24T19:40:13.860Z) 0% 0% /cover repeat scroll padding-box"
 			min-height="220px"
 			md-min-height="140px"
+			border-color="#000000"
 		/>
 		<Link
 			font={"--capture"}
