@@ -526,7 +526,7 @@ export default (() => {
 			empty-border-width="1px"
 			empty-border-style="solid"
 			empty-border-color="LightGray"
-			background=",--color-indigo url(https://uploads.quarkly.io/6123949e957019001e284458/images/backfooter.svg?v=2021-08-24T19:40:13.860Z) 0% 0% /cover repeat scroll padding-box"
+			background=",--color-dark radial-gradient(circle at center,rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%) 0% 0% /cover repeat scroll padding-box"
 			min-height="220px"
 			md-min-height="140px"
 			border-color="#000000"

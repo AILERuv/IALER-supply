@@ -4,7 +4,10 @@ import { createGlobalStyle } from "styled-components";
 
 const pageStyles = {
     "404": {},
-    "index": {}
+    "tienda": {},
+    "index": {},
+    "one-edit": {},
+    "tienda1": {}
 };
 
 const PageStyles = createGlobalStyle`

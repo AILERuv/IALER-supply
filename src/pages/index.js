@@ -1,12 +1,13 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Box, Strong, Section, Text, Icon, LinkBox, Hr, Input, Button } from "@quarkly/widgets";
+import { Theme, Link, Image, Box, Icon, Strong, Section, Text } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
-import { FaHeartbeat, FaMedkit, FaCommentMedical, FaClinicMedical } from "react-icons/fa";
-import { IoIosWater } from "react-icons/io";
+import { TiShoppingCart, TiThMenu } from "react-icons/ti";
+import { MdViewHeadline } from "react-icons/md";
+import { FaShoppingCart } from "react-icons/fa";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -82,6 +83,22 @@ export default (() => {
 						md-margin="40px 0px 13px 0px"
 						md-font="--headline4"
 					>
+						<Icon
+							category="ti"
+							icon={TiShoppingCart}
+							size="64px"
+							color="#ffffff"
+							width="50px"
+							height="50px"
+						/>
+						<Icon
+							category="md"
+							icon={MdViewHeadline}
+							size="64px"
+							color="#ffffff"
+							width="50px"
+							height="50px"
+						/>
 						<Link
 							href="#"
 							font="normal 600 18px/1.5 --fontFamily-googleInter"
@@ -120,10 +137,10 @@ export default (() => {
 							md-font="--lead"
 							href="tel:0999347470"
 							font="--base"
-							text-decoration-line="initial"
 							opacity="0.8"
 							hover-opacity="1"
 							md-color="--indigo"
+							text-decoration-line="initial"
 						>
 							TIENDA
 						</Link>
@@ -142,11 +159,38 @@ export default (() => {
 						>
 							Contactos
 						</Link>
+						<Icon
+							category="ti"
+							icon={TiThMenu}
+							size="64px"
+							color="#ffffff"
+							width="50px"
+							height="50px"
+							quarkly-title="Menú"
+						/>
+						<Icon
+							category="fa"
+							icon={FaShoppingCart}
+							size="64px"
+							color="#ffffff"
+							padding="0px 0px 0px 0px"
+							width="45px"
+							height="45px"
+							quarkly-title="Carrito de compras"
+						/>
 					</Box>
 				</Components.QuarklycommunityKitMobileSidePanel>
 			</Box>
 		</Section>
-		<Section background="url(https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Vercion-Cuadrado-v2.jpg?v=2024-09-17T14:26:53.715Z)" padding="36px 0 80px 0" quarkly-title="HeroBlock" md-padding="36px 0 60px 0">
+		<Section
+			background="url(https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Found-Green.png?v=2024-09-21T12:59:14.462Z)"
+			padding="36px 0 200px 0"
+			quarkly-title="HeroBlock"
+			md-padding="36px 0 60px 0"
+			sm-padding="36px 0px 60px 0"
+			sm-position="static"
+			lg-padding="36px 0 150px 0"
+		>
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
@@ -180,22 +224,19 @@ export default (() => {
 					text-transform="uppercase"
 					lg-margin="0px 0px 8px 0px"
 					sm-font="normal 500 16px/1.6 &quot;Inter&quot;, sans-serif"
-				>
-					la mejor calidad en productos{" \n\n"}
-				</Text>
+				/>
 				<Text
 					lg-text-align="left"
-					lg-font="normal 700 40px/1.2 &quot;Inter&quot;, sans-serif"
+					lg-font="normal 700 150px/1.2 &quot;Inter&quot;, sans-serif"
 					md-font="normal 700 28px/1.2 &quot;Inter&quot;, sans-serif"
 					margin="0px 0px 16px 0px"
 					font="--headline1"
 					color="--white"
 					sm-font="normal 500 30px/1.2 &quot;Inter&quot;, sans-serif"
 					width="786px"
+					lg-padding="0px 0px 0px 0px"
 				>
-					AILER{" "}
-					<br />
-					Calidad y confianza en cada compra{"\n\n"}
+					AILER
 				</Text>
 				<Text
 					font="--base"
@@ -206,71 +247,7 @@ export default (() => {
 					color="--white"
 					opacity="1"
 					width="400px"
-				>
-					Calidad garantizada — Envío gratis en pedidos mayores a $50{"\n\n"}
-				</Text>
-				<Box
-					lg-margin="32px 0px 0px 0px"
-					md-width="100%"
-					md-margin="36px 0px 0px 0px"
-					display="flex"
-					margin="72px 0px 0px 0px"
-				>
-					<Link
-						sm-margin="0px 22px 0px 0px"
-						transition="background-color 0.3s --transitionTimingFunction-easeInOut 0s"
-						href="/login"
-						text-decoration-line="initial"
-						sm-font="normal 500 18px/1.6 &quot;Inter&quot;, sans-serif"
-						md-font="normal 500 16px/1.6 &quot;Inter&quot;, sans-serif"
-						sm-padding="15px 13px 15px 13px"
-						md-text-align="center"
-						lg-margin="0px 32px 0px 0px"
-						padding="15px 30px 15px 30px"
-						border-radius="10px"
-						lg-font="normal 500 18px/1.6 &quot;Inter&quot;, sans-serif"
-						md-padding="15px 16px 15px 16px"
-						hover-color="--primary"
-						color="--white"
-						margin="0px 44px 0px 0px"
-						lg-padding="15px 23px 15px 23px"
-						md-width="50%"
-						background="--color-primary"
-						font="--lead"
-						hover-background="--color-white"
-						border-width="2px"
-						border-style="solid"
-						border-color="--color-primary"
-					>
-						Empieza ahora{"\n\n"}
-					</Link>
-					<Link
-						padding="15px 30px 15px 30px"
-						font="--lead"
-						border-radius="10px"
-						border-width="2px"
-						transition="background-color 0.3s --transitionTimingFunction-easeInOut 0s"
-						lg-font="normal 500 18px/1.6 &quot;Inter&quot;, sans-serif"
-						border-style="solid"
-						md-width="50%"
-						md-font="normal 500 16px/1.6 &quot;Inter&quot;, sans-serif"
-						md-text-align="center"
-						sm-padding="15px 13px 15px 13px"
-						text-decoration-line="initial"
-						color="--dark"
-						background="rgba(255, 5, 5, 0)"
-						margin="0px 0px 0px 0px"
-						border-color="rgba(255, 255, 255, 0.3)"
-						sm-font="normal 500 18px/1.6 &quot;Inter&quot;, sans-serif"
-						hover-background="--color-white"
-						hover-color="--indigo"
-						href="/login"
-						lg-padding="15px 23px 15px 23px"
-						md-padding="15px 16px 15px 16px"
-					>
-						Descubre más{"\n\n"}
-					</Link>
-				</Box>
+				/>
 			</Box>
 			<Box
 				empty-border-style="solid"
@@ -290,1380 +267,90 @@ export default (() => {
 					width="100%"
 					max-height="450px"
 					md-margin="0px 0px 30px 0px"
-					src="https://uploads.quarkly.io/6123949e957019001e284458/images/iPhone%20X.png?v=2021-09-21T20:44:05.312Z"
+					src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17:11:09.041Z"
 					lg-position="relative"
 					lg-left="-5px"
 					max-width="100%"
-					srcSet="https://smartuploads.quarkly.io/6123949e957019001e284458/images/iPhone%20X.png?v=2021-09-21T20%3A44%3A05.312Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/iPhone%20X.png?v=2021-09-21T20%3A44%3A05.312Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/iPhone%20X.png?v=2021-09-21T20%3A44%3A05.312Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/iPhone%20X.png?v=2021-09-21T20%3A44%3A05.312Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/iPhone%20X.png?v=2021-09-21T20%3A44%3A05.312Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/iPhone%20X.png?v=2021-09-21T20%3A44%3A05.312Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/iPhone%20X.png?v=2021-09-21T20%3A44%3A05.312Z&quality=85&w=3200 3200w"
+					srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=3200 3200w"
 					sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
 				/>
 			</Box>
 		</Section>
-		<Section padding="160px 0 24px 0" sm-padding="80px 0 24px 0" md-padding="50px 0 24px 0">
-			<Override slot="SectionContent" flex-direction="row" md-flex-wrap="wrap" />
+		<Section background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Found-Green.png?v=2024-09-21T12:59:14.462Z) 0% 0% /auto repeat scroll padding-box" lg-border-color="#79b55d">
 			<Box
-				width="50%"
-				flex-direction="column"
+				lg-margin="32px 0px 0px 0px"
 				md-width="100%"
-				empty-min-width="64px"
-				empty-border-style="solid"
-				empty-border-color="LightGray"
-				padding="16px 16px 16px 16px"
+				md-margin="36px 0px 0px 0px"
 				display="flex"
-				align-items="flex-start"
-				justify-content="space-between"
-				empty-min-height="64px"
-				empty-border-width="1px"
+				margin="02px 0px 0px 0px"
+				flex-direction="row"
+				flex-wrap="no-wrap"
+				align-items="center"
+				justify-content="center"
 			>
-				<Image
-					position="static"
-					lg-left="0px"
-					md-width="100%"
-					border-radius="10px"
-					lg-max-height="366px"
-					src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Rosado-Primavera-Doc.jpg?v=2024-09-17T15:30:45.291Z"
-					left="-140px"
-					max-width="100%"
-					object-fit="cover"
-					srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Rosado-Primavera-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Rosado-Primavera-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Rosado-Primavera-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Rosado-Primavera-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Rosado-Primavera-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Rosado-Primavera-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Rosado-Primavera-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=3200 3200w"
-					sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
-				/>
-			</Box>
-			<Box
-				justify-content="space-between"
-				empty-min-height="64px"
-				empty-border-style="solid"
-				width="50%"
-				padding="16px 16px 16px 16px"
-				display="flex"
-				md-width="100%"
-				empty-min-width="64px"
-				empty-border-width="1px"
-				empty-border-color="LightGray"
-				flex-direction="column"
-				align-items="flex-start"
-			>
-				<Box display="flex" margin="0px 0px 20px 0px" align-items="center" sm-width="100%">
-					<Image width="24px" height="24px" src="https://uploads.quarkly.io/6123949e957019001e284458/images/icon-man.svg?v=2021-09-21T22:14:38.397Z" margin="0px 15px 0px 0px" />
-					<Text
-						margin="0px 0px 0px 0px"
-						color="--primary"
-						font="--lead"
-						lg-font="normal 500 16px/1.6 &quot;Inter&quot;, sans-serif"
-						md-font="normal 500 14px/1.6 &quot;Inter&quot;, sans-serif"
-					>
-						NUEVO PRODUCTO     Marca: Deja{"\n\n"}
-					</Text>
-				</Box>
-				<Text
-					width="95%"
-					lg-width="100%"
-					lg-font="normal 700 34px/1.2 &quot;Inter&quot;, sans-serif"
-					md-font="normal 700 24px/1.2 &quot;Inter&quot;, sans-serif"
-					margin="0px 0px 16px 0px"
-					font="--headline2"
-					color="--indigo"
-					sm-font="normal 800 30px/1.2 &quot;Inter&quot;, sans-serif"
-				>
-					Detergente en Polvo Deja con Suavizante Brisa de Primavera 340g{"\n\n"}
-				</Text>
-				<Text
-					font="--base"
-					opacity=".7"
-					lg-font="normal 400 16px/1.5 &quot;Inter&quot;, sans-serif"
-					md-font="normal 400 14px/1.5 &quot;Inter&quot;, sans-serif"
-					margin="0px 0px 25px 0px"
-					color="--dark"
-				>
-					<Strong>
-						Detergente en polvo con suavizante de brisa de primavera
-						<br />
-					</Strong>
-					Cuida tu ropa con moléculas de limpieza profunda. Mantén tus prendas impecables, suaves y con un aroma primaveral duradero. Contenido: 340g.{"\n\n"}
-				</Text>
 				<Link
-					href="/login"
-					sm-padding="15px 20px 15px 20px"
-					hover-background="rgba(5, 165, 255, 0)"
-					border-width="1px"
-					border-style="solid"
-					font="--lead"
 					sm-margin="0px 22px 0px 0px"
-					border-color="rgba(255, 255, 255, 0.3)"
-					md-width="100%"
-					md-font="normal 500 16px/1.6 &quot;Inter&quot;, sans-serif"
+					transition="background-color 0.3s --transitionTimingFunction-easeInOut 0s"
+					href="/login"
 					text-decoration-line="initial"
-					color="--white"
-					margin="0px 44px 0px 0px"
-					hover-color="--primary"
-					hover-border-color="--color-primary"
+					sm-font="normal 500 18px/1.6 &quot;Inter&quot;, sans-serif"
+					md-font="normal 500 16px/1.6 &quot;Inter&quot;, sans-serif"
+					sm-padding="15px 13px 15px 13px"
 					md-text-align="center"
-					background="--color-primary"
+					lg-margin="0px 32px 0px 0px"
 					padding="15px 30px 15px 30px"
 					border-radius="10px"
-					sm-font="normal 500 18px/1.6 &quot;Inter&quot;, sans-serif"
-					transition="background-color 0.3s --transitionTimingFunction-easeInOut 0s"
+					lg-font="normal 500 18px/1.6 &quot;Inter&quot;, sans-serif"
+					md-padding="15px 16px 15px 16px"
+					hover-color="--primary"
+					color="--white"
+					margin="0px 0px 0px 50px"
+					lg-padding="15px 23px 15px 23px"
+					md-width="50%"
+					background="--color-grey linear-gradient(0deg,#000000 0%,#000000 100%)"
+					font="--lead"
+					hover-background="--color-white"
+					border-width="4px"
+					border-style="solid"
+					border-color="--color-orange"
+					box-shadow="0 0 0px 0 transparent"
+					lg-border-color="#ffffff"
+					lg-color="#ffffff"
+					lg-hover-color="#ffffff"
+					lg-hover-background="linear-gradient(180deg,transparent 0%,transparent 100%) 0 0 no-repeat"
+					lg-hover-padding="15px 23px 15px 23px"
 				>
-					Pedir ya!!
+					Empieza ahora
+				</Link>
+				<Link
+					padding="15px 30px 15px 30px"
+					font="--lead"
+					border-radius="10px"
+					border-width="2px"
+					transition="background-color 0.3s --transitionTimingFunction-easeInOut 0s"
+					lg-font="normal 500 18px/1.6 &quot;Inter&quot;, sans-serif"
+					border-style="solid"
+					md-width="50%"
+					md-font="normal 500 16px/1.6 &quot;Inter&quot;, sans-serif"
+					md-text-align="center"
+					sm-padding="15px 13px 15px 13px"
+					text-decoration-line="initial"
+					color="--dark"
+					background="rgba(255, 5, 5, 0)"
+					margin="0px 0px 0px 0px"
+					border-color="rgba(255, 255, 255, 0.3)"
+					sm-font="normal 500 18px/1.6 &quot;Inter&quot;, sans-serif"
+					hover-background="--color-white"
+					hover-color="--indigo"
+					href="/login"
+					lg-padding="15px 23px 15px 23px"
+					md-padding="15px 16px 15px 16px"
+				>
+					Descubre más
 				</Link>
 			</Box>
 		</Section>
-		<Section padding="150px 0 150px 0" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6123949e957019001e284458/images/Group%20177.png?v=2021-08-24T00:44:18.633Z) 0% 30% /cover no-repeat scroll padding-box" sm-padding="0px 0 0px 0" md-padding="50px 0 50px 0">
-			<Override
-				slot="SectionContent"
-				display="grid"
-				grid-gap="16px"
-				grid-template-columns="repeat(4, 1fr)"
-				lg-grid-gap="0px"
-				md-grid-template-columns="repeat(2, 1fr)"
-			/>
-			<Box
-				justify-content="center"
-				flex-direction="column"
-				background="url(https://uploads.quarkly.io/6123949e957019001e284458/images/backtio.png?v=2021-08-24T00:48:34.217Z) center center/91% no-repeat"
-				empty-min-width="64px"
-				empty-border-width="1px"
-				empty-border-color="LightGray"
-				align-items="center"
-				display="flex"
-				min-height="320px"
-				empty-min-height="64px"
-				empty-border-style="solid"
-				padding="0px 0px 60px 0px"
-			>
-				<Text
-					lg-font="normal 700 34px/1.2 --fontFamily-googleInter"
-					lg-margin="0px 0px 8px 0px"
-					position="relative"
-					z-index="1"
-					color="--indigo"
-					font="normal 700 49px/1.2 --fontFamily-googleInter"
-					margin="0px 0px 20px 0px"
-				>
-					5M+
-				</Text>
-				<Text
-					text-align="center"
-					opacity="0.7"
-					lg-font="normal 500 16px/1.6 &quot;Inter&quot;, sans-serif"
-					sm-font="normal 500 14px/1.6 &quot;Inter&quot;, sans-serif"
-					md-font="normal 500 18px/1.6 &quot;Inter&quot;, sans-serif"
-					position="relative"
-					z-index="1"
-					color="--dark"
-					font="--lead"
-					margin="0px 0px 0px 0px"
-				>
-					Users
-				</Text>
-			</Box>
-			<Box
-				empty-min-width="64px"
-				empty-border-style="solid"
-				empty-border-color="LightGray"
-				flex-direction="column"
-				background="url(https://uploads.quarkly.io/6123949e957019001e284458/images/backtio.png?v=2021-08-24T00:48:34.217Z) center center/91% no-repeat"
-				min-height="320px"
-				padding="0px 0px 60px 0px"
-				empty-min-height="64px"
-				empty-border-width="1px"
-				display="flex"
-				align-items="center"
-				justify-content="center"
-			>
-				<Text
-					color="--indigo"
-					font="normal 700 49px/1.2 --fontFamily-googleInter"
-					margin="0px 0px 20px 0px"
-					lg-font="normal 700 34px/1.2 --fontFamily-googleInter"
-					lg-margin="0px 0px 8px 0px"
-					position="relative"
-					z-index="1"
-				>
-					40k+
-				</Text>
-				<Text
-					md-font="normal 500 18px/1.6 &quot;Inter&quot;, sans-serif"
-					sm-font="normal 500 14px/1.6 &quot;Inter&quot;, sans-serif"
-					z-index="1"
-					font="--lead"
-					margin="0px 0px 0px 0px"
-					text-align="center"
-					opacity="0.7"
-					position="relative"
-					color="--dark"
-					lg-font="normal 500 16px/1.6 &quot;Inter&quot;, sans-serif"
-				>
-					Testimonials{" "}
-				</Text>
-			</Box>
-			<Box
-				empty-min-height="64px"
-				flex-direction="column"
-				background="url(https://uploads.quarkly.io/6123949e957019001e284458/images/backtio.png?v=2021-08-24T00:48:34.217Z) center center/91% no-repeat"
-				empty-border-style="solid"
-				empty-border-color="LightGray"
-				display="flex"
-				sm-margin="0px 0px 0px 0px"
-				empty-min-width="64px"
-				empty-border-width="1px"
-				justify-content="center"
-				min-height="320px"
-				md-margin="30px 0px 0px 0px"
-				align-items="center"
-				padding="0px 0px 60px 0px"
-			>
-				<Text
-					margin="0px 0px 20px 0px"
-					lg-font="normal 700 34px/1.2 --fontFamily-googleInter"
-					lg-margin="0px 0px 8px 0px"
-					position="relative"
-					z-index="1"
-					color="--indigo"
-					font="normal 700 49px/1.2 --fontFamily-googleInter"
-				>
-					24/7
-				</Text>
-				<Text
-					opacity="0.7"
-					md-font="normal 500 18px/1.6 &quot;Inter&quot;, sans-serif"
-					sm-font="normal 500 14px/1.6 &quot;Inter&quot;, sans-serif"
-					z-index="1"
-					margin="0px 0px 0px 0px"
-					text-align="center"
-					lg-font="normal 500 16px/1.6 &quot;Inter&quot;, sans-serif"
-					position="relative"
-					color="--dark"
-					font="--lead"
-				>
-					Support{" "}
-				</Text>
-			</Box>
-			<Box
-				flex-direction="column"
-				md-margin="30px 0px 0px 0px"
-				empty-min-height="64px"
-				empty-border-style="solid"
-				empty-border-color="LightGray"
-				empty-min-width="64px"
-				display="flex"
-				background="url(https://uploads.quarkly.io/6123949e957019001e284458/images/backtio.png?v=2021-08-24T00:48:34.217Z) center center/91% no-repeat"
-				padding="0px 0px 60px 0px"
-				sm-margin="0px 0px 0px 0px"
-				min-height="320px"
-				empty-border-width="1px"
-				align-items="center"
-				justify-content="center"
-			>
-				<Text
-					position="relative"
-					z-index="1"
-					color="--indigo"
-					font="normal 700 49px/1.2 --fontFamily-googleInter"
-					margin="0px 0px 20px 0px"
-					lg-font="normal 700 34px/1.2 --fontFamily-googleInter"
-					lg-margin="0px 0px 8px 0px"
-				>
-					$12
-				</Text>
-				<Text
-					lg-width="70%"
-					width="70%"
-					position="relative"
-					z-index="1"
-					color="--dark"
-					text-align="center"
-					opacity="0.7"
-					md-font="normal 500 18px/1.6 &quot;Inter&quot;, sans-serif"
-					font="--lead"
-					margin="0px 0px 0px 0px"
-					lg-font="normal 500 16px/1.6 &quot;Inter&quot;, sans-serif"
-					sm-font="normal 500 14px/1.6 &quot;Inter&quot;, sans-serif"
-				>
-					Monthly subscription
-				</Text>
-			</Box>
-		</Section>
-		<Section md-padding="60px 0 60px 0" padding="84px 0 60px 0" sm-padding="60px 0 60px 0">
-			<Override slot="SectionContent" flex-wrap="wrap" flex-direction="row" />
-			<Box
-				border-radius="10px"
-				flex-direction="column"
-				width="33.333%"
-				md-padding="0px 0px 0px 0px"
-				sm-padding="16px 16px 16px 16px"
-				display="flex"
-				align-items="flex-start"
-				justify-content="flex-start"
-				margin="0px 0px 0px 0px"
-				lg-margin="0px 0px 0px 0px"
-				md-width="100%"
-				sm-width="100%"
-				padding="16px 16px 16px 16px"
-				lg-width="50%"
-			>
-				<Text color="--primary" lg-font="normal 500 16px/1.6 &quot;Inter&quot;, sans-serif" margin="0px 0px 0px 0px" font="--lead">
-					Board-certified doctors
-				</Text>
-				<Text
-					lg-font="600 22px/1.3 &quot;Inter&quot;, sans-serif"
-					position="relative"
-					z-index="1"
-					color="--indigo"
-					font="--headline4"
-					margin="15px 0px 0px 0px"
-					sm-font="700 25px/1.3 &quot;Inter&quot;, sans-serif"
-				>
-					Medical Care at Home
-				</Text>
-				<Text margin="20px 0px 10px 0px" color="--dark" font="--base" opacity=".9">
-					Consult with a doctor directly from your phone, 24/7. No waiting rooms or appointments.
-				</Text>
-				<Image height="48px" src="https://uploads.quarkly.io/6123949e957019001e284458/images/akar-icons_arrow-right.svg?v=2021-09-22T00:57:24.639Z" width="48px" />
-			</Box>
-			<Box
-				empty-min-height="64px"
-				empty-border-width="1px"
-				empty-border-color="LightGray"
-				empty-min-width="64px"
-				empty-border-style="solid"
-				padding="16px 16px 16px 16px"
-				width="33.333%"
-				md-width="100%"
-				sm-width="100%"
-				lg-width="50%"
-			>
-				<LinkBox
-					border-color="rgba(66, 82, 207, 0.1)"
-					lg-height="100%"
-					overflow-x="hidden"
-					overflow-y="hidden"
-					height="100%"
-					width="100%"
-					flex-direction="column"
-					border-style="solid"
-					border-width="2px"
-					border-radius="10px"
-					padding="32px 32px 32px 32px"
-					display="flex"
-					justify-content="flex-end"
-					md-min-height="200px"
-					lg-min-height="350px"
-					align-items="flex-start"
-				>
-					<Icon
-						font="48px sans-serif"
-						category="fa"
-						icon={FaHeartbeat}
-						size="48px"
-						color="--indigo"
-					/>
-					<Text color="--indigo" font="--lead" margin="32px 0px 8px 0px">
-						Primary care
-					</Text>
-					<Text color="--dark" font="--textBase" margin="0px 0px 0px 0px">
-						Manage current issues and prevent future diseases in one go.
-					</Text>
-				</LinkBox>
-			</Box>
-			<Box
-				empty-min-height="64px"
-				empty-border-width="1px"
-				empty-border-color="LightGray"
-				empty-min-width="64px"
-				empty-border-style="solid"
-				padding="16px 16px 16px 16px"
-				width="33.333%"
-				md-width="100%"
-				sm-width="100%"
-				lg-width="50%"
-			>
-				<LinkBox
-					border-color="rgba(66, 82, 207, 0.1)"
-					lg-height="100%"
-					overflow-x="hidden"
-					overflow-y="hidden"
-					height="100%"
-					width="100%"
-					flex-direction="column"
-					border-style="solid"
-					border-width="2px"
-					border-radius="10px"
-					padding="32px 32px 32px 32px"
-					display="flex"
-					justify-content="flex-end"
-					md-min-height="200px"
-					lg-min-height="350px"
-					align-items="flex-start"
-				>
-					<Icon
-						font="48px sans-serif"
-						category="fa"
-						icon={FaMedkit}
-						size="48px"
-						color="--indigo"
-					/>
-					<Text color="--indigo" font="--lead" margin="32px 0px 8px 0px">
-						Urgent care
-					</Text>
-					<Text color="--dark" font="--textBase" margin="0px 0px 0px 0px">
-						Get round-the-clock medical help from world-class specialists from anywhere in the globe.
-					</Text>
-				</LinkBox>
-			</Box>
-			<Box
-				empty-min-height="64px"
-				empty-border-width="1px"
-				empty-border-color="LightGray"
-				empty-min-width="64px"
-				empty-border-style="solid"
-				padding="16px 16px 16px 16px"
-				width="33.333%"
-				md-width="100%"
-				sm-width="100%"
-				lg-width="50%"
-			>
-				<LinkBox
-					border-color="rgba(66, 82, 207, 0.1)"
-					lg-height="100%"
-					overflow-x="hidden"
-					overflow-y="hidden"
-					height="100%"
-					width="100%"
-					flex-direction="column"
-					border-style="solid"
-					border-width="2px"
-					border-radius="10px"
-					padding="32px 32px 32px 32px"
-					display="flex"
-					justify-content="flex-end"
-					md-min-height="200px"
-					lg-min-height="350px"
-					align-items="flex-start"
-				>
-					<Icon
-						font="48px sans-serif"
-						category="fa"
-						icon={FaCommentMedical}
-						size="48px"
-						color="--indigo"
-					/>
-					<Text color="--indigo" font="--lead" margin="32px 0px 8px 0px">
-						Mental Health
-					</Text>
-					<Text color="--dark" font="--textBase" margin="0px 0px 0px 0px">
-						Control your anxiety and depression with a personalized treatment plan online.
-					</Text>
-				</LinkBox>
-			</Box>
-			<Box
-				empty-min-height="64px"
-				empty-border-width="1px"
-				empty-border-color="LightGray"
-				empty-min-width="64px"
-				empty-border-style="solid"
-				padding="16px 16px 16px 16px"
-				width="33.333%"
-				md-width="100%"
-				sm-width="100%"
-				lg-width="50%"
-			>
-				<LinkBox
-					border-color="rgba(66, 82, 207, 0.1)"
-					lg-height="100%"
-					overflow-x="hidden"
-					overflow-y="hidden"
-					height="100%"
-					width="100%"
-					flex-direction="column"
-					border-style="solid"
-					border-width="2px"
-					border-radius="10px"
-					padding="32px 32px 32px 32px"
-					display="flex"
-					justify-content="flex-end"
-					md-min-height="200px"
-					lg-min-height="350px"
-					align-items="flex-start"
-				>
-					<Icon
-						font="48px sans-serif"
-						category="fa"
-						icon={FaClinicMedical}
-						size="48px"
-						color="--indigo"
-					/>
-					<Text color="--indigo" font="--lead" margin="32px 0px 8px 0px">
-						Pediatrics
-					</Text>
-					<Text color="--dark" font="--textBase" margin="0px 0px 0px 0px">
-						Get free care for your children over 3 with a monthly subscription.
-					</Text>
-				</LinkBox>
-			</Box>
-			<Box
-				empty-min-height="64px"
-				empty-border-width="1px"
-				empty-border-color="LightGray"
-				empty-min-width="64px"
-				empty-border-style="solid"
-				padding="16px 16px 16px 16px"
-				width="33.333%"
-				md-width="100%"
-				sm-width="100%"
-				lg-width="50%"
-			>
-				<LinkBox
-					border-color="rgba(66, 82, 207, 0.1)"
-					lg-height="100%"
-					overflow-x="hidden"
-					overflow-y="hidden"
-					height="100%"
-					width="100%"
-					flex-direction="column"
-					border-style="solid"
-					border-width="2px"
-					border-radius="10px"
-					padding="32px 32px 32px 32px"
-					display="flex"
-					justify-content="flex-end"
-					md-min-height="200px"
-					lg-min-height="350px"
-					align-items="flex-start"
-				>
-					<Icon
-						font="48px sans-serif"
-						category="io"
-						icon={IoIosWater}
-						size="48px"
-						color="--indigo"
-					/>
-					<Text color="--indigo" font="--lead" margin="32px 0px 8px 0px">
-						Remote Treatment
-					</Text>
-					<Text color="--dark" font="--textBase" margin="0px 0px 0px 0px">
-						Get high-quality remote care powered by doctors and data.
-					</Text>
-				</LinkBox>
-			</Box>
-		</Section>
-		<Section padding="60px 0 100px 0" md-padding="60px 0 60px 0">
-			<Override slot="SectionContent" flex-direction="row" flex-wrap="wrap" />
-			<Box
-				empty-border-style="solid"
-				empty-border-color="LightGray"
-				justify-content="center"
-				align-items="flex-start"
-				flex-direction="column"
-				width="100%"
-				empty-min-width="64px"
-				empty-min-height="64px"
-				empty-border-width="1px"
-				display="flex"
-			>
-				<Text
-					margin="0px 0px 38px 0px"
-					font="--headline2"
-					color="--indigo"
-					md-font="normal 700 20px/1.2 &quot;Inter&quot;, sans-serif"
-					lg-font="normal 700 34px/1.2 &quot;Inter&quot;, sans-serif"
-					text-align="left"
-				>
-					Latest User Reviews
-				</Text>
-				<Hr
-					border-style="solid"
-					margin="0px 0px 0px 0px"
-					height="0px"
-					lg-display="none"
-					width="100%"
-					border-color="rgba(66, 82, 207, 0.1)"
-					border-width="2px 0 0 0"
-				/>
-			</Box>
-			<Box
-				flex-direction="column"
-				justify-content="flex-start"
-				border-width="0px 1px 0px 0px"
-				md-padding="32px 16px 16px 16px"
-				width="25%"
-				max-height="265px"
-				display="flex"
-				align-items="center"
-				sm-justify-content="flex-start"
-				lg-justify-content="flex-start"
-				md-align-items="center"
-				border-color="rgba(66, 82, 207, 0.1)"
-				height="100%"
-				md-width="50%"
-				sm-margin="0px 0px 30px 0px"
-				border-style="solid"
-				lg-padding="32px 16px 16px 16px"
-				lg-min-height="298px"
-				md-justify-content="flex-start"
-				sm-padding="32px 16px 16px 16px"
-				margin="0px 0px 0px 0px"
-				padding="16px 32px 16px 16px"
-			>
-				<Image
-					object-fit="cover"
-					border-radius="50%"
-					object-position="0% 0%"
-					width="80px"
-					height="80px"
-					margin="0px 0px 8px 0px"
-					src="https://images.unsplash.com/photo-1594194610831-c3f92ec62180?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=228&q=80"
-					srcSet="https://images.unsplash.com/photo-1594194610831-c3f92ec62180?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80 500w,https://images.unsplash.com/photo-1594194610831-c3f92ec62180?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800w,https://images.unsplash.com/photo-1594194610831-c3f92ec62180?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1080&q=80 1080w,https://images.unsplash.com/photo-1594194610831-c3f92ec62180?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80 1600w,https://images.unsplash.com/photo-1594194610831-c3f92ec62180?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80 2000w,https://images.unsplash.com/photo-1594194610831-c3f92ec62180?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2600&q=80 2600w,https://images.unsplash.com/photo-1594194610831-c3f92ec62180?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3200&q=80 3200w"
-					sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
-				/>
-				<Text margin="0px 0px 8px 0px" font="--lead" color="--indigo" sm-text-align="center">
-					John B.
-				</Text>
-				<Text margin="0px 0px 0px 0px" font="--textBase" color="--darkL1" lg-font="400 14px/1.6 &quot;Inter&quot;, sans-serif">
-					I like the app! The doctors are very helpful and friendly. I've saved a lot on the trip and hospital bills.
-				</Text>
-			</Box>
-			<Box
-				padding="16px 32px 16px 32px"
-				border-width="0px 1px 0px 1px"
-				width="25%"
-				md-align-items="center"
-				align-items="center"
-				flex-direction="column"
-				border-style="solid"
-				border-color="rgba(66, 82, 207, 0.1)"
-				lg-padding="32px 16px 16px 16px"
-				lg-min-height="298px"
-				md-border-width="0px 0px 0px 1px"
-				md-justify-content="flex-start"
-				sm-justify-content="flex-start"
-				md-padding="32px 16px 16px 16px"
-				max-height="265px"
-				display="flex"
-				justify-content="flex-start"
-				margin="0px 0px 0px 0px"
-				sm-margin="0px 0px 30px 0px"
-				height="100%"
-				lg-justify-content="flex-start"
-				sm-padding="32px 16px 16px 16px"
-				md-width="50%"
-			>
-				<Image
-					object-position="0% 0%"
-					width="80px"
-					height="80px"
-					margin="0px 0px 8px 0px"
-					src="https://images.unsplash.com/photo-1552452518-f921c926b76b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=272&q=80"
-					object-fit="cover"
-					border-radius="50%"
-					srcSet="https://images.unsplash.com/photo-1552452518-f921c926b76b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80 500w,https://images.unsplash.com/photo-1552452518-f921c926b76b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80 800w,https://images.unsplash.com/photo-1552452518-f921c926b76b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80 1080w,https://images.unsplash.com/photo-1552452518-f921c926b76b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=80 1600w,https://images.unsplash.com/photo-1552452518-f921c926b76b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80 2000w,https://images.unsplash.com/photo-1552452518-f921c926b76b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2600&q=80 2600w,https://images.unsplash.com/photo-1552452518-f921c926b76b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3200&q=80 3200w"
-					sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
-				/>
-				<Text font="--lead" color="--indigo" sm-text-align="center" margin="0px 0px 8px 0px">
-					Bob W.
-				</Text>
-				<Text margin="0px 0px 0px 0px" font="--textBase" color="--darkL1" lg-font="400 14px/1.6 &quot;Inter&quot;, sans-serif">
-					I got professional help and my prescription quite fast. The app is awesome. The doctors are real pros!
-				</Text>
-			</Box>
-			<Hr
-				display="none"
-				width="100%"
-				border-color="rgba(66, 82, 207, 0.1)"
-				border-style="solid"
-				margin="0px 16px 32px 16px"
-				md-margin="16px 16px 16px 16px"
-				md-display="block"
-				border-width="2px 0 0 0"
-				height="0px"
-			/>
-			<Box
-				border-color="rgba(66, 82, 207, 0.1)"
-				md-justify-content="flex-start"
-				sm-margin="0px 0px 30px 0px"
-				padding="16px 32px 16px 32px"
-				border-style="solid"
-				lg-padding="32px 16px 16px 16px"
-				sm-padding="32px 16px 16px 16px"
-				border-width="0px 1px 0px 1px"
-				lg-min-height="298px"
-				md-border-width="0px 1px 0px 0px"
-				display="flex"
-				align-items="center"
-				flex-direction="column"
-				justify-content="flex-start"
-				margin="0px 0px 0px 0px"
-				height="100%"
-				width="25%"
-				md-width="50%"
-				lg-justify-content="flex-start"
-				md-align-items="center"
-				sm-justify-content="flex-start"
-				md-padding="32px 16px 16px 16px"
-				max-height="265px"
-			>
-				<Image
-					src="https://images.unsplash.com/photo-1563306406-e66174fa3787?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=274&q=80"
-					object-fit="cover"
-					border-radius="50%"
-					width="80px"
-					height="80px"
-					margin="0px 0px 8px 0px"
-					srcSet="https://images.unsplash.com/photo-1563306406-e66174fa3787?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80 500w,https://images.unsplash.com/photo-1563306406-e66174fa3787?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800w,https://images.unsplash.com/photo-1563306406-e66174fa3787?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1080&q=80 1080w,https://images.unsplash.com/photo-1563306406-e66174fa3787?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80 1600w,https://images.unsplash.com/photo-1563306406-e66174fa3787?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80 2000w,https://images.unsplash.com/photo-1563306406-e66174fa3787?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2600&q=80 2600w,https://images.unsplash.com/photo-1563306406-e66174fa3787?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3200&q=80 3200w"
-					sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
-				/>
-				<Text margin="0px 0px 8px 0px" font="--lead" color="--indigo" sm-text-align="center">
-					Natalie J.
-				</Text>
-				<Text margin="0px 0px 0px 0px" font="--textBase" color="--darkL1" lg-font="400 14px/1.6 &quot;Inter&quot;, sans-serif">
-					One of the best medical apps I've ever come across! Highly recommend to everyone.
-				</Text>
-			</Box>
-			<Box
-				align-items="center"
-				padding="16px 32px 16px 32px"
-				border-width="0px 0px 0px 1px"
-				lg-padding="32px 16px 16px 16px"
-				lg-min-height="298px"
-				height="100%"
-				md-align-items="center"
-				width="25%"
-				max-height="265px"
-				md-width="50%"
-				margin="0px 0px 0px 0px"
-				border-color="rgba(66, 82, 207, 0.1)"
-				lg-justify-content="flex-start"
-				sm-padding="32px 16px 16px 16px"
-				display="flex"
-				sm-justify-content="flex-start"
-				flex-direction="column"
-				sm-margin="0px 0px 30px 0px"
-				border-style="solid"
-				md-justify-content="flex-start"
-				md-padding="32px 16px 16px 16px"
-			>
-				<Image
-					width="80px"
-					height="80px"
-					margin="0px 0px 8px 0px"
-					src="https://images.unsplash.com/photo-1604004555489-723a93d6ce74?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
-					object-fit="cover"
-					border-radius="50%"
-					srcSet="https://images.unsplash.com/photo-1604004555489-723a93d6ce74?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80 500w,https://images.unsplash.com/photo-1604004555489-723a93d6ce74?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800w,https://images.unsplash.com/photo-1604004555489-723a93d6ce74?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1080&q=80 1080w,https://images.unsplash.com/photo-1604004555489-723a93d6ce74?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80 1600w,https://images.unsplash.com/photo-1604004555489-723a93d6ce74?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80 2000w,https://images.unsplash.com/photo-1604004555489-723a93d6ce74?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2600&q=80 2600w,https://images.unsplash.com/photo-1604004555489-723a93d6ce74?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3200&q=80 3200w"
-					sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
-				/>
-				<Text margin="0px 0px 8px 0px" font="--lead" color="--indigo" sm-text-align="center">
-					Laura H.
-				</Text>
-				<Text margin="0px 0px 0px 0px" font="--textBase" color="--darkL1" lg-font="400 14px/1.6 &quot;Inter&quot;, sans-serif">
-					I got my meds so fast. Thank you a lot! You are a lifesaver.
-				</Text>
-			</Box>
-		</Section>
-		<Section lg-padding="60px 0 40px 0" padding="60px 0 100px 0" md-padding="30px 0 30px 0">
-			<Text
-				md-margin="0px 0px 40px 0px"
-				lg-margin="0px 0px 40px 0px"
-				margin="0px 0px 80px 0px"
-				font="--headline2"
-				color="--indigo"
-				lg-font="normal 700 34px/1.2 &quot;Inter&quot;, sans-serif"
-				md-font="normal 700 20px/1.2 &quot;Inter&quot;, sans-serif"
-			>
-				A New Way of Getting Healthcare
-			</Text>
-			<Box
-				margin="0px 0px 20px 0px"
-				sm-margin="0px 0px 30px 0px"
-				border-radius="10px"
-				min-height="284px"
-				md-border-radius="0px"
-				padding="0px 0px 0px 0px"
-				border-style="solid"
-				display="flex"
-				border-width="2px"
-				flex-wrap="wrap"
-				md-border-width="0px 0px 2px 0px"
-				width="100%"
-				border-color="rgba(66, 82, 207, 0.1)"
-				md-border-color="rgba(66, 82, 207, 0.1)"
-			>
-				<Box display="flex" lg-width="50%" md-width="100%" width="30%">
-					<Image
-						margin="-1px 0px -1px -1px"
-						src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-						object-fit="cover"
-						width="100%"
-						border-radius="10px"
-						md-margin="0px 0px 0px 0px"
-						srcSet="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80 500w,https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800w,https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1080&q=80 1080w,https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80 1600w,https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80 2000w,https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2600&q=80 2600w,https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3200&q=80 3200w"
-						sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
-					/>
-				</Box>
-				<Box
-					padding="32px 17% 32px 62px"
-					width="70%"
-					justify-content="space-between"
-					md-width="100%"
-					md-padding="32px 30px 32px 0px"
-					display="flex"
-					flex-direction="column"
-					position="relative"
-					lg-padding="32px 30px 32px 32px"
-					lg-width="50%"
-				>
-					<LinkBox
-						bottom="auto"
-						lg-right="16px"
-						lg-top="49px"
-						position="absolute"
-						right="32px"
-						top="32px"
-						left="auto"
-					>
-						<Image
-							width="48px"
-							height="48px"
-							top="32px"
-							left="auto"
-							lg-height="24px"
-							src="https://uploads.quarkly.io/6123949e957019001e284458/images/akar-icons_arrow-right.svg?v=2021-09-22T00:57:24.639Z"
-							position="static"
-							right="32px"
-							bottom="auto"
-							lg-width="24px"
-						/>
-					</LinkBox>
-					<Text
-						color="--indigo"
-						width="85%"
-						lg-font="600 22px/1.3 &quot;Inter&quot;, sans-serif"
-						margin="0px 0px 8px 0px"
-						font="--headline4"
-					>
-						Check your symptoms online
-					</Text>
-					<Text margin="0px 0px 0px 0px" font="--textBase" color="--darkL1">
-						Don't want to be sick and tired any more? For quick care for you and your children, text our doctors who are available 24/7. No waiting rooms or appointments.
-					</Text>
-				</Box>
-			</Box>
-			<Box
-				display="flex"
-				sm-margin="0px 0px 30px 0px"
-				padding="0px 0px 0px 0px"
-				md-border-width="0px 0px 2px 0px"
-				margin="0px 0px 20px 0px"
-				width="100%"
-				border-style="solid"
-				border-color="rgba(66, 82, 207, 0.1)"
-				border-width="2px"
-				border-radius="10px"
-				flex-wrap="wrap"
-				min-height="284px"
-				md-border-radius="0px"
-			>
-				<Box
-					padding="32px 17% 32px 62px"
-					width="70%"
-					display="flex"
-					position="relative"
-					md-padding="32px 30px 32px 0px"
-					flex-direction="column"
-					justify-content="space-between"
-					lg-padding="32px 30px 32px 32px"
-					lg-width="50%"
-					md-width="100%"
-				>
-					<LinkBox
-						lg-right="16px"
-						lg-top="49px"
-						position="absolute"
-						right="32px"
-						top="32px"
-						left="auto"
-						bottom="auto"
-					>
-						<Image
-							src="https://uploads.quarkly.io/6123949e957019001e284458/images/akar-icons_arrow-right.svg?v=2021-09-22T00:57:24.639Z"
-							left="auto"
-							lg-height="24px"
-							top="32px"
-							bottom="auto"
-							lg-width="24px"
-							width="48px"
-							height="48px"
-							position="static"
-							right="32px"
-						/>
-					</LinkBox>
-					<Text
-						margin="0px 0px 8px 0px"
-						font="--headline4"
-						color="--indigo"
-						width="85%"
-						lg-font="600 22px/1.3 &quot;Inter&quot;, sans-serif"
-					>
-						Manage your health easily
-					</Text>
-					<Text margin="0px 0px 0px 0px" font="--textBase" color="--darkL1">
-						Over 200 doctors are available to provide you with comprehensive care online at any time. Get help with managing chronic illnesses to achieve lifestyle objectives and optimize your pharmaceutical regimen.
-					</Text>
-				</Box>
-				<Box
-					md-order="-1"
-					width="30%"
-					display="flex"
-					lg-width="50%"
-					md-width="100%"
-				>
-					<Image
-						object-fit="cover"
-						width="100%"
-						border-radius="10px"
-						md-margin="0px 0px 0px 0px"
-						margin="-1px -1px -1px 0px"
-						src="https://images.unsplash.com/photo-1513315849661-23219170a967?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
-						srcSet="https://images.unsplash.com/photo-1513315849661-23219170a967?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80 500w,https://images.unsplash.com/photo-1513315849661-23219170a967?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80 800w,https://images.unsplash.com/photo-1513315849661-23219170a967?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80 1080w,https://images.unsplash.com/photo-1513315849661-23219170a967?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=80 1600w,https://images.unsplash.com/photo-1513315849661-23219170a967?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80 2000w,https://images.unsplash.com/photo-1513315849661-23219170a967?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2600&q=80 2600w,https://images.unsplash.com/photo-1513315849661-23219170a967?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3200&q=80 3200w"
-						sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
-					/>
-				</Box>
-			</Box>
-			<Box
-				display="flex"
-				width="100%"
-				border-style="solid"
-				border-radius="10px"
-				min-height="284px"
-				md-border-radius="0px"
-				margin="0px 0px 20px 0px"
-				sm-margin="0px 0px 30px 0px"
-				padding="0px 0px 0px 0px"
-				border-color="rgba(66, 82, 207, 0.1)"
-				border-width="2px"
-				flex-wrap="wrap"
-				md-border-width="0px 0px 2px 0px"
-			>
-				<Box md-width="100%" width="30%" display="flex" lg-width="50%">
-					<Image
-						margin="-1px 0px -1px -1px"
-						src="https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
-						object-fit="cover"
-						width="100%"
-						border-radius="10px"
-						md-margin="0px 0px 0px 0px"
-						srcSet="https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80 500w,https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80 800w,https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80 1080w,https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=80 1600w,https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80 2000w,https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2600&q=80 2600w,https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3200&q=80 3200w"
-						sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
-					/>
-				</Box>
-				<Box
-					md-width="100%"
-					padding="32px 17% 32px 62px"
-					display="flex"
-					lg-width="50%"
-					position="relative"
-					lg-padding="32px 30px 32px 32px"
-					md-padding="32px 30px 32px 0px"
-					width="70%"
-					flex-direction="column"
-					justify-content="space-between"
-				>
-					<LinkBox
-						position="absolute"
-						right="32px"
-						top="32px"
-						bottom="auto"
-						left="auto"
-						lg-right="16px"
-						lg-top="49px"
-					>
-						<Image
-							lg-width="24px"
-							lg-height="24px"
-							right="32px"
-							top="32px"
-							left="auto"
-							bottom="auto"
-							width="48px"
-							height="48px"
-							src="https://uploads.quarkly.io/6123949e957019001e284458/images/akar-icons_arrow-right.svg?v=2021-09-22T00:57:24.639Z"
-							position="static"
-						/>
-					</LinkBox>
-					<Text
-						margin="0px 0px 8px 0px"
-						font="--headline4"
-						color="--indigo"
-						width="85%"
-						lg-font="600 22px/1.3 &quot;Inter&quot;, sans-serif"
-					>
-						Pay at affordable prices
-					</Text>
-					<Text margin="0px 0px 0px 0px" font="--textBase" color="--darkL1">
-						We are constantly getting better and more affordable. Our technology can keep prices low because our care teams are more concentrated on you rather than paperwork or billing. Plus we got rid of copays and hidden fees.
-					</Text>
-				</Box>
-			</Box>
-		</Section>
-		<Section
-			padding="60px 0 90px 0"
-			position="relative"
-			lg-padding="60px 0 60px 0"
-			sm-padding="30px 0 30px 0"
-			md-padding="30px 0 30px 0"
-		>
-			<Override
-				slot="SectionContent"
-				lg-padding="0px 0px 0px 0px"
-				max-width="1194px"
-				flex-wrap="wrap"
-				flex-direction="row"
-			/>
-			<Box
-				lg-align-items="flex-start"
-				flex-direction="row"
-				justify-content="flex-start"
-				margin="0px 0px 64px 0px"
-				padding="16px 0px 16px 0px"
-				lg-margin="0px 0px 24px 0px"
-				sm-flex-wrap="wrap"
-				display="flex"
-				align-items="center"
-				sm-margin="0px 0px 30px 0px"
-				width="100%"
-			>
-				<Box width="40%" sm-width="100%">
-					<Text color="--indigo" sm-margin="0px 0px 16px 0px" margin="0px 0px 0px 0px" font="--headline4">
-						Partners
-					</Text>
-				</Box>
-				<Box width="60%" padding="0px 20% 0px 0px" lg-padding="0px 0px 0px 0px" sm-width="100%">
-					<Text margin="0px 0px 0px 0px" font="--textBase" color="--dark">
-						…Help4u is one of the most influential consumer health companies that builds the future of care by addressing healthcare disparities of access and affordability.
-					</Text>
-				</Box>
-			</Box>
-			<Hr
-				border-style="solid"
-				height="0px"
-				margin="0px 0px 32px 0px"
-				lg-margin="0px 0px 16px 0px"
-				lg-display="none"
-				width="100%"
-				border-color="rgba(66, 82, 207, 0.1)"
-				border-width="2px 0 0 0"
-			/>
-			<Box
-				margin="0px 0px 0px 0px"
-				sm-flex-wrap="wrap"
-				sm-margin="0px 0px 0px 0px"
-				justify-content="center"
-				flex-wrap="wrap"
-				width="100%"
-				display="flex"
-			>
-				<Box
-					border-style="solid"
-					sm-padding="0px 0px 0px 0px"
-					border-color="rgba(66, 82, 207, 0.1)"
-					lg-padding="16px 16px 16px 16px"
-					md-width="50%"
-					sm-display="flex"
-					sm-align-items="center"
-					width="33.333%"
-					padding="32px 74px 32px 74px"
-					border-width="0px 1px 0px 0px"
-					sm-justify-content="center"
-				>
-					<Box
-						box-shadow="1px 4px 12px rgba(0, 0, 0, 0.08)"
-						justify-content="center"
-						margin="0px 0px 0px 0px"
-						sm-width="90%"
-						width="100%"
-						padding="18px 25px 18px 25px"
-						display="flex"
-						align-items="center"
-						lg-padding="18px 18px 18px 18px"
-					>
-						<Image src="https://uploads.quarkly.io/6123949e957019001e284458/images/fedex.png?v=2021-08-23T22:45:21.577Z" sm-min-height="35px" srcSet="https://smartuploads.quarkly.io/6123949e957019001e284458/images/fedex.png?v=2021-08-23T22%3A45%3A21.577Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/fedex.png?v=2021-08-23T22%3A45%3A21.577Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/fedex.png?v=2021-08-23T22%3A45%3A21.577Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/fedex.png?v=2021-08-23T22%3A45%3A21.577Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/fedex.png?v=2021-08-23T22%3A45%3A21.577Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/fedex.png?v=2021-08-23T22%3A45%3A21.577Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/fedex.png?v=2021-08-23T22%3A45%3A21.577Z&quality=85&w=3200 3200w" sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw" />
-					</Box>
-				</Box>
-				<Box
-					border-width="0px 1px 0px 1px"
-					md-border-width="0px 0px 0px 1px"
-					sm-display="flex"
-					sm-align-items="center"
-					md-width="50%"
-					sm-padding="0px 0px 0px 0px"
-					sm-justify-content="center"
-					width="33.333%"
-					padding="32px 74px 32px 74px"
-					border-style="solid"
-					border-color="rgba(66, 82, 207, 0.1)"
-					lg-padding="16px 16px 16px 16px"
-				>
-					<Box
-						sm-width="90%"
-						width="100%"
-						padding="18px 25px 18px 25px"
-						align-items="center"
-						margin="0px 0px 0px 0px"
-						box-shadow="1px 4px 12px rgba(0, 0, 0, 0.08)"
-						display="flex"
-						justify-content="center"
-						lg-padding="18px 18px 18px 18px"
-					>
-						<Image src="https://uploads.quarkly.io/6123949e957019001e284458/images/google-1-removebg-preview%201.png?v=2021-08-23T22:46:07.391Z" sm-min-height="35px" srcSet="https://smartuploads.quarkly.io/6123949e957019001e284458/images/google-1-removebg-preview%201.png?v=2021-08-23T22%3A46%3A07.391Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/google-1-removebg-preview%201.png?v=2021-08-23T22%3A46%3A07.391Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/google-1-removebg-preview%201.png?v=2021-08-23T22%3A46%3A07.391Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/google-1-removebg-preview%201.png?v=2021-08-23T22%3A46%3A07.391Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/google-1-removebg-preview%201.png?v=2021-08-23T22%3A46%3A07.391Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/google-1-removebg-preview%201.png?v=2021-08-23T22%3A46%3A07.391Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/google-1-removebg-preview%201.png?v=2021-08-23T22%3A46%3A07.391Z&quality=85&w=3200 3200w" sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw" />
-					</Box>
-				</Box>
-				<Hr
-					md-display="block"
-					display="none"
-					border-style="solid"
-					height="0px"
-					lg-margin="16px 0px 16px 0px"
-					margin="32px 0px 32px 0px"
-					width="100%"
-					border-color="rgba(66, 82, 207, 0.1)"
-					border-width="2px 0 0 0"
-				/>
-				<Box
-					lg-padding="16px 16px 16px 16px"
-					md-width="50%"
-					md-border-width="0px 1px 0px 0px"
-					sm-display="flex"
-					sm-justify-content="center"
-					padding="32px 74px 32px 74px"
-					border-width="0px 0px 0px 1px"
-					border-style="solid"
-					sm-align-items="center"
-					width="33.333%"
-					border-color="rgba(66, 82, 207, 0.1)"
-					sm-padding="0px 0px 0px 0px"
-				>
-					<Box
-						margin="0px 0px 0px 0px"
-						width="100%"
-						box-shadow="1px 4px 12px rgba(0, 0, 0, 0.08)"
-						align-items="center"
-						lg-padding="18px 18px 18px 18px"
-						sm-width="90%"
-						padding="18px 25px 18px 25px"
-						display="flex"
-						justify-content="center"
-					>
-						<Image src="https://uploads.quarkly.io/6123949e957019001e284458/images/new-Microsoft-logo-removebg-preview%201.png?v=2021-08-23T22:46:26.360Z" sm-min-height="35px" srcSet="https://smartuploads.quarkly.io/6123949e957019001e284458/images/new-Microsoft-logo-removebg-preview%201.png?v=2021-08-23T22%3A46%3A26.360Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/new-Microsoft-logo-removebg-preview%201.png?v=2021-08-23T22%3A46%3A26.360Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/new-Microsoft-logo-removebg-preview%201.png?v=2021-08-23T22%3A46%3A26.360Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/new-Microsoft-logo-removebg-preview%201.png?v=2021-08-23T22%3A46%3A26.360Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/new-Microsoft-logo-removebg-preview%201.png?v=2021-08-23T22%3A46%3A26.360Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/new-Microsoft-logo-removebg-preview%201.png?v=2021-08-23T22%3A46%3A26.360Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/new-Microsoft-logo-removebg-preview%201.png?v=2021-08-23T22%3A46%3A26.360Z&quality=85&w=3200 3200w" sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw" />
-					</Box>
-				</Box>
-				<Hr
-					margin="32px 0px 32px 0px"
-					lg-margin="16px 0px 16px 0px"
-					md-display="none"
-					width="100%"
-					border-color="rgba(66, 82, 207, 0.1)"
-					border-width="2px 0 0 0"
-					border-style="solid"
-					height="0px"
-				/>
-				<Box
-					padding="32px 74px 32px 74px"
-					border-style="solid"
-					md-border-width="0px 0px 0px 1px"
-					sm-display="flex"
-					sm-justify-content="center"
-					width="33.333%"
-					border-width="0px 1px 0px 0px"
-					border-color="rgba(66, 82, 207, 0.1)"
-					lg-padding="16px 16px 16px 16px"
-					md-width="50%"
-					sm-padding="0px 0px 0px 0px"
-					sm-align-items="center"
-				>
-					<Box
-						padding="18px 25px 18px 25px"
-						display="flex"
-						align-items="center"
-						lg-padding="18px 18px 18px 18px"
-						width="100%"
-						box-shadow="1px 4px 12px rgba(0, 0, 0, 0.08)"
-						justify-content="center"
-						margin="0px 0px 0px 0px"
-						sm-width="90%"
-					>
-						<Image src="https://uploads.quarkly.io/6123949e957019001e284458/images/olv.png?v=2021-08-23T22:46:17.840Z" sm-min-height="35px" srcSet="https://smartuploads.quarkly.io/6123949e957019001e284458/images/olv.png?v=2021-08-23T22%3A46%3A17.840Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/olv.png?v=2021-08-23T22%3A46%3A17.840Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/olv.png?v=2021-08-23T22%3A46%3A17.840Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/olv.png?v=2021-08-23T22%3A46%3A17.840Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/olv.png?v=2021-08-23T22%3A46%3A17.840Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/olv.png?v=2021-08-23T22%3A46%3A17.840Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/olv.png?v=2021-08-23T22%3A46%3A17.840Z&quality=85&w=3200 3200w" sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw" />
-					</Box>
-				</Box>
-				<Hr
-					height="0px"
-					border-width="2px 0 0 0"
-					border-style="solid"
-					margin="32px 0px 32px 0px"
-					lg-margin="16px 0px 16px 0px"
-					md-display="block"
-					display="none"
-					width="100%"
-					border-color="rgba(66, 82, 207, 0.1)"
-				/>
-				<Box
-					md-width="50%"
-					sm-padding="0px 0px 0px 0px"
-					sm-justify-content="center"
-					padding="32px 74px 32px 74px"
-					border-style="solid"
-					border-color="rgba(66, 82, 207, 0.1)"
-					sm-display="flex"
-					sm-align-items="center"
-					md-border-width="0px 1px 0px 0px"
-					width="33.333%"
-					border-width="0px 1px 0px 1px"
-					lg-padding="16px 16px 16px 16px"
-				>
-					<Box
-						width="100%"
-						padding="18px 25px 18px 25px"
-						display="flex"
-						justify-content="center"
-						margin="0px 0px 0px 0px"
-						lg-padding="18px 18px 18px 18px"
-						sm-width="90%"
-						box-shadow="1px 4px 12px rgba(0, 0, 0, 0.08)"
-						align-items="center"
-					>
-						<Image sm-height="35px" src="https://uploads.quarkly.io/6123949e957019001e284458/images/amazon.png?v=2021-08-23T22:48:00.645Z" srcSet="https://smartuploads.quarkly.io/6123949e957019001e284458/images/amazon.png?v=2021-08-23T22%3A48%3A00.645Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/amazon.png?v=2021-08-23T22%3A48%3A00.645Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/amazon.png?v=2021-08-23T22%3A48%3A00.645Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/amazon.png?v=2021-08-23T22%3A48%3A00.645Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/amazon.png?v=2021-08-23T22%3A48%3A00.645Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/amazon.png?v=2021-08-23T22%3A48%3A00.645Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/amazon.png?v=2021-08-23T22%3A48%3A00.645Z&quality=85&w=3200 3200w" sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw" />
-					</Box>
-				</Box>
-				<Box
-					sm-display="flex"
-					sm-align-items="center"
-					width="33.333%"
-					border-color="rgba(66, 82, 207, 0.1)"
-					lg-padding="16px 16px 16px 16px"
-					sm-padding="0px 0px 0px 0px"
-					sm-justify-content="center"
-					padding="32px 74px 32px 74px"
-					border-width="0px 0px 0px 1px"
-					border-style="solid"
-					md-width="50%"
-				>
-					<Box
-						justify-content="center"
-						margin="0px 0px 0px 0px"
-						lg-padding="18px 18px 18px 18px"
-						width="100%"
-						box-shadow="1px 4px 12px rgba(0, 0, 0, 0.08)"
-						padding="18px 25px 18px 25px"
-						display="flex"
-						align-items="center"
-						sm-width="90%"
-					>
-						<Image src="https://uploads.quarkly.io/6123949e957019001e284458/images/kisspng-logo-brand-walmart-desktop-wallpaper-image-walmart-to-offer-low-cost-checking-accounts-5b63eaa32fa612%201.png?v=2021-08-23T22:48:17.392Z" sm-height="35px" srcSet="https://smartuploads.quarkly.io/6123949e957019001e284458/images/kisspng-logo-brand-walmart-desktop-wallpaper-image-walmart-to-offer-low-cost-checking-accounts-5b63eaa32fa612%201.png?v=2021-08-23T22%3A48%3A17.392Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/kisspng-logo-brand-walmart-desktop-wallpaper-image-walmart-to-offer-low-cost-checking-accounts-5b63eaa32fa612%201.png?v=2021-08-23T22%3A48%3A17.392Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/kisspng-logo-brand-walmart-desktop-wallpaper-image-walmart-to-offer-low-cost-checking-accounts-5b63eaa32fa612%201.png?v=2021-08-23T22%3A48%3A17.392Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/kisspng-logo-brand-walmart-desktop-wallpaper-image-walmart-to-offer-low-cost-checking-accounts-5b63eaa32fa612%201.png?v=2021-08-23T22%3A48%3A17.392Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/kisspng-logo-brand-walmart-desktop-wallpaper-image-walmart-to-offer-low-cost-checking-accounts-5b63eaa32fa612%201.png?v=2021-08-23T22%3A48%3A17.392Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/kisspng-logo-brand-walmart-desktop-wallpaper-image-walmart-to-offer-low-cost-checking-accounts-5b63eaa32fa612%201.png?v=2021-08-23T22%3A48%3A17.392Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/6123949e957019001e284458/images/kisspng-logo-brand-walmart-desktop-wallpaper-image-walmart-to-offer-low-cost-checking-accounts-5b63eaa32fa612%201.png?v=2021-08-23T22%3A48%3A17.392Z&quality=85&w=3200 3200w" sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw" />
-					</Box>
-				</Box>
-			</Box>
-			<Hr
-				border-style="solid"
-				height="0px"
-				margin="32px 0px 0px 0px"
-				lg-margin="16px 0px 0px 0px"
-				lg-display="none"
-				width="100%"
-				border-color="rgba(66, 82, 207, 0.1)"
-				border-width="2px 0 0 0"
-			/>
-		</Section>
-		<Section sm-padding="60px 0 60px 0" lg-padding="60px 0 100px 0" padding="60px 0 160px 0">
-			<Override slot="SectionContent" justify-content="center" align-items="center" />
-			<Box
-				width="87%"
-				min-height="16px"
-				height="30px"
-				border-radius="30px 30px 0px 0px"
-				background="--color-light"
-				opacity="0.3"
-			/>
-			<Box
-				background="--color-light"
-				opacity="0.4"
-				sm-display="none"
-				width="93%"
-				min-height="16px"
-				height="30px"
-				border-radius="30px 30px 0px 0px"
-			/>
-			<Box
-				padding="66px 30px 66px 30px"
-				flex-direction="column"
-				sm-padding="30px 15px 30px 15px"
-				sm-border-radius="12px"
-				align-items="center"
-				background="--color-light"
-				border-radius="30px"
-				justify-content="center"
-				width="100%"
-				display="flex"
-				margin="0px 0px 0px 0px"
-			>
-				<Text font="--lead" color="--primary" text-transform="uppercase" margin="0px 0px 25px 0px">
-					NEWSLETTER
-				</Text>
-				<Text
-					text-align="center"
-					lg-font="normal 600 30px/1.3 --fontFamily-googleInter"
-					md-font="normal 600 25px/1.3 --fontFamily-googleInter"
-					sm-font="normal 600 19px/1.3 --fontFamily-googleInter"
-					margin="0px 0px 35px 0px"
-					font="normal 600 39px/1.3 --fontFamily-googleInter"
-					color="--dark"
-				>
-					We offer 20% off every month
-					<br />
-					for all our subscribers
-				</Text>
-				<Box
-					border-color="rgba(5, 0, 11, 0.1)"
-					border-radius="16px"
-					border-width="1px"
-					border-style="solid"
-					sm-width="100%"
-					background="#ffffff"
-					padding="12px 12px 12px 12px"
-				>
-					<Components.QuarklycommunityKitNetlifyForm>
-						<Input
-							placeholder="Email Address"
-							sm-width="100%"
-							sm-padding="12px 14px 12px 14px"
-							border-width="0px"
-							padding="14px 16px 14px 16px"
-							width="320px"
-							md-width="250px"
-							name="Email Address"
-							type="email"
-							required
-							background="rgba(255, 255, 255, 0)"
-						/>
-						<Button
-							sm-width="100%"
-							border-width="1px"
-							border-color="--color-primary"
-							font="--base"
-							padding="14px 53px 14px 53px"
-							sm-padding="12px 15px 12px 15px"
-							hover-background="--color-light"
-							hover-color="--primary"
-							border-style="solid"
-							background="--color-primary"
-							border-radius="10px"
-							md-padding="14px 30px 14px 30px"
-						>
-							Subscribe
-						</Button>
-					</Components.QuarklycommunityKitNetlifyForm>
-				</Box>
-			</Box>
-		</Section>
-		<Section background="--color-indigo" padding="100px 0 100px 0" md-padding="40px 0 40px 0">
+		<Section background="--color-dark" padding="100px 0 100px 0" md-padding="40px 0 40px 0">
 			<Override slot="SectionContent" flex-direction="row" md-flex-wrap="wrap" />
 			<Box
 				empty-border-color="LightGray"
@@ -1726,7 +413,7 @@ export default (() => {
 				md-align-items="center"
 			>
 				<Text color="--white" font="--lead" margin="0px 0px 20px 0px">
-					SHORT LINKS
+					LINK CORTOS
 				</Text>
 				<Link
 					text-decoration-line="initial"
@@ -1738,7 +425,7 @@ export default (() => {
 					color="--white"
 					opacity=".8"
 				>
-					Home
+					Casa{"\n\n"}
 				</Link>
 				<Link
 					opacity=".8"
@@ -1750,7 +437,7 @@ export default (() => {
 					href="#"
 					color="--white"
 				>
-					Services
+					Servicios{"\n\n"}
 				</Link>
 				<Link
 					opacity=".8"
@@ -1762,7 +449,7 @@ export default (() => {
 					href="#"
 					color="--white"
 				>
-					Screenshots
+					Capturas de pantalla{"\n\n"}
 				</Link>
 				<Link
 					color="--white"
@@ -1774,7 +461,7 @@ export default (() => {
 					font="--base"
 					href="#"
 				>
-					Contact
+					Contacto{"\n\n"}
 				</Link>
 			</Box>
 			<Box
@@ -1792,8 +479,7 @@ export default (() => {
 				empty-border-width="1px"
 			>
 				<Text color="--white" font="--lead" margin="0px 0px 20px 0px">
-					HELP LINK
-					<br />
+					LINK DE AYUDA
 				</Text>
 				<Link
 					opacity=".8"
@@ -1805,7 +491,7 @@ export default (() => {
 					href="#"
 					color="--white"
 				>
-					How to download
+					Cómo descargar{"\n\n"}
 				</Link>
 				<Link
 					text-decoration-line="initial"
@@ -1817,7 +503,7 @@ export default (() => {
 					color="--white"
 					opacity=".8"
 				>
-					How it works
+					Cómo funciona{"\n\n"}
 				</Link>
 				<Link
 					color="--white"
@@ -1829,7 +515,7 @@ export default (() => {
 					font="--base"
 					href="#"
 				>
-					Video tutorial
+					Tutorial en video{"\n\n"}
 				</Link>
 				<Link
 					opacity=".8"
@@ -1900,251 +586,6 @@ export default (() => {
 				</Link>
 			</Box>
 		</Section>
-		<Components.QuarklycommunityKitTabsFull>
-			<Section
-				text-align="center"
-				background-color="--primary"
-				color="--light"
-				padding="80px 0"
-				sm-padding="40px 0"
-			>
-				<Text
-					as="h5"
-					font="--lead"
-					margin="10px 0 0 0"
-					text-transform="uppercase"
-					letter-spacing="5px"
-				>
-					Second to none
-				</Text>
-				<Text as="h1" font="--headline1" md-font="--headline2" margin="10px 0 0 0">
-					About Us
-				</Text>
-				<Text as="p" font="--lead" margin="40px 0 20px 0">
-					Hi! I'm a paragraph. Click here to add your own text and edit me. It’s a piece of cake. I’m a great space for you to tell a story and let your site visitors know more about you. Talk about your business and what products and services you offer. Share how you came up with the idea for your company and what makes you different from your competitors. Make your business stand out and show your visitors who you are.
-				</Text>
-			</Section>
-			<Section padding="80px 0 80px 0">
-				<Override slot="SectionContent" flex-direction="row" flex-wrap="wrap" />
-				<Box
-					display="flex"
-					align-items="center"
-					flex-direction="column"
-					justify-content="center"
-					margin="0px 0px 64px 0px"
-					width="100%"
-					sm-margin="0px 0px 30px 0px"
-					padding="0px 200px 0px 200px"
-					lg-padding="0px 0px 0px 0px"
-				>
-					<Text margin="0px 0px 16px 0px" font="--headline1" text-align="center" sm-font="normal 700 42px/1.2 &quot;Source Sans Pro&quot;, sans-serif">
-						Price
-					</Text>
-					<Text margin="0px 0px 0px 0px" color="--darkL2" text-align="center" font="--lead">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-					</Text>
-				</Box>
-				<Box
-					display="grid"
-					flex-wrap="wrap"
-					width="100%"
-					align-items="center"
-					justify-content="center"
-					grid-template-columns="repeat(3, 1fr)"
-					grid-gap="30px"
-					md-grid-template-columns="1fr"
-				>
-					<Box
-						width="100%"
-						display="flex"
-						padding="7px 7px 40px 7px"
-						border-radius="24px"
-						align-items="center"
-						flex-direction="column"
-						border-width="1px"
-						border-style="solid"
-						border-color="--color-lightD2"
-						justify-content="center"
-					>
-						<Image
-							src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Rosado-Primavera-Doc.jpg?v=2024-09-17T15:30:45.291Z"
-							border-radius="16px"
-							margin="0px 0px 32px 0px"
-							max-width="100%"
-							md-width="100%"
-							width="100%"
-							height="278px"
-							object-fit="cover"
-							srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Rosado-Primavera-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Rosado-Primavera-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Rosado-Primavera-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Rosado-Primavera-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Rosado-Primavera-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Rosado-Primavera-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Rosado-Primavera-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=3200 3200w"
-							sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
-						/>
-						<Box
-							display="flex"
-							flex-direction="column"
-							padding="0px 30px 0px 30px"
-							align-items="flex-start"
-							justify-content="flex-start"
-						>
-							<Text margin="0px 0px 8px 0px" font="--headline3">
-								Company
-							</Text>
-							<Text margin="0px 0px 16px 0px" text-align="center" font="--lead">
-								$ 199 / month
-							</Text>
-							<Text margin="0px 0px 48px 0px" color="--darkL2" font="--base">
-								Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at
-							</Text>
-							<Link
-								href="#"
-								text-decoration-line="initial"
-								color="--dark"
-								font="--lead"
-								padding="12px 24px 12px 24px"
-								border-radius="8px"
-								background="--color-secondary"
-								lg-padding="12px 20px 12px 20px"
-								transition="background-color 0.2s ease-in-out 0s"
-								hover-transition="background-color 0.2s ease-in-out 0s"
-								hover-background="--color-orange"
-							>
-								Select plan
-							</Link>
-						</Box>
-					</Box>
-					<Box
-						width="100%"
-						display="flex"
-						padding="7px 7px 40px 7px"
-						border-radius="24px"
-						align-items="center"
-						flex-direction="column"
-						border-width="1px"
-						border-style="solid"
-						border-color="--color-lightD2"
-						justify-content="center"
-						position="relative"
-					>
-						<Text
-							margin="0px 0px 0px 0px"
-							font="--base"
-							color="#ffffff"
-							padding="4px 16px 4px 16px"
-							background="--color-green"
-							border-radius="50px"
-							position="absolute"
-							top="24px"
-							right="24px"
-							bottom="auto"
-							left="auto"
-						>
-							Recomended
-						</Text>
-						<Image
-							src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Vercion-Cuadrado-v2.jpg?v=2024-09-17T14:26:53.715Z"
-							border-radius="16px"
-							margin="0px 0px 32px 0px"
-							max-width="100%"
-							md-width="100%"
-							max-height="278px"
-							object-fit="cover"
-							width="100%"
-							srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Vercion-Cuadrado-v2.jpg?v=2024-09-17T14%3A26%3A53.715Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Vercion-Cuadrado-v2.jpg?v=2024-09-17T14%3A26%3A53.715Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Vercion-Cuadrado-v2.jpg?v=2024-09-17T14%3A26%3A53.715Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Vercion-Cuadrado-v2.jpg?v=2024-09-17T14%3A26%3A53.715Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Vercion-Cuadrado-v2.jpg?v=2024-09-17T14%3A26%3A53.715Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Vercion-Cuadrado-v2.jpg?v=2024-09-17T14%3A26%3A53.715Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Vercion-Cuadrado-v2.jpg?v=2024-09-17T14%3A26%3A53.715Z&quality=85&w=3200 3200w"
-							sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
-						/>
-						<Box
-							display="flex"
-							flex-direction="column"
-							padding="0px 30px 0px 30px"
-							align-items="flex-start"
-							justify-content="flex-start"
-						>
-							<Text margin="0px 0px 8px 0px" font="--headline3">
-								Pro
-							</Text>
-							<Text margin="0px 0px 16px 0px" text-align="center" font="--lead">
-								$ 10 / month
-							</Text>
-							<Text margin="0px 0px 48px 0px" color="--darkL2" font="--base">
-								Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at
-							</Text>
-							<Link
-								href="#"
-								text-decoration-line="initial"
-								color="--dark"
-								font="--lead"
-								padding="12px 24px 12px 24px"
-								border-radius="8px"
-								background="--color-secondary"
-								lg-padding="12px 20px 12px 20px"
-								transition="background-color 0.2s ease-in-out 0s"
-								hover-transition="background-color 0.2s ease-in-out 0s"
-								hover-background="--color-orange"
-							>
-								Select plan
-							</Link>
-						</Box>
-					</Box>
-					<Box
-						width="100%"
-						display="flex"
-						padding="7px 7px 40px 7px"
-						border-radius="24px"
-						align-items="center"
-						flex-direction="column"
-						border-width="1px"
-						border-style="solid"
-						border-color="--color-lightD2"
-						justify-content="center"
-					>
-						<Image
-							src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Verde-Doc.jpg?v=2024-09-17T15:30:45.291Z"
-							border-radius="16px"
-							margin="0px 0px 32px 0px"
-							max-width="100%"
-							md-width="100%"
-							max-height="278px"
-							object-fit="cover"
-							width="100%"
-							srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Verde-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Verde-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Verde-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Verde-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Verde-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Verde-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Deja-320g-Verde-Doc.jpg?v=2024-09-17T15%3A30%3A45.291Z&quality=85&w=3200 3200w"
-							sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
-						/>
-						<Box
-							display="flex"
-							flex-direction="column"
-							padding="0px 30px 0px 30px"
-							align-items="flex-start"
-							justify-content="flex-start"
-						>
-							<Text margin="0px 0px 8px 0px" font="--headline3">
-								Freelance
-							</Text>
-							<Text margin="0px 0px 16px 0px" text-align="center" font="--lead">
-								Free
-							</Text>
-							<Text margin="0px 0px 48px 0px" color="--darkL2" font="--base">
-								Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at
-							</Text>
-							<Link
-								href="#"
-								text-decoration-line="initial"
-								color="--dark"
-								font="--lead"
-								padding="12px 24px 12px 24px"
-								border-radius="8px"
-								background="--color-secondary"
-								lg-padding="12px 20px 12px 20px"
-								transition="background-color 0.2s ease-in-out 0s"
-								hover-transition="background-color 0.2s ease-in-out 0s"
-								hover-background="--color-orange"
-							>
-								Select plan
-							</Link>
-						</Box>
-					</Box>
-				</Box>
-			</Section>
-		</Components.QuarklycommunityKitTabsFull>
-		<Components.QuarklycommunityKitTabsFull />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}

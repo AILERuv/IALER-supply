@@ -5,8 +5,11 @@ export default {
 			"pageUrl": "root",
 			"name": "root",
 			"children": [
+				"66e9c2d8e5d277001897e34b",
 				"66e9916328b5e30023ac82e4",
-				"66e9916328b5e30023ac82e8"
+				"66e9916328b5e30023ac82e8",
+				"66ec2ade9710450018a2ee3d",
+				"66ec498a9710450018a2eee5"
 			]
 		},
 		"66e9916328b5e30023ac82e4": {
@@ -18,6 +21,21 @@ export default {
 			"id": "66e9916328b5e30023ac82e8",
 			"name": "index",
 			"pageUrl": "index"
+		},
+		"66e9c2d8e5d277001897e34b": {
+			"id": "66e9c2d8e5d277001897e34b",
+			"pageUrl": "tienda",
+			"name": "Tienda"
+		},
+		"66ec2ade9710450018a2ee3d": {
+			"id": "66ec2ade9710450018a2ee3d",
+			"pageUrl": "one-edit",
+			"name": "One EDIT"
+		},
+		"66ec498a9710450018a2eee5": {
+			"id": "66ec498a9710450018a2eee5",
+			"pageUrl": "tienda1",
+			"name": "TIENDA"
 		}
 	},
 	"mode": "production",

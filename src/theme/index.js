@@ -79,7 +79,7 @@ export default {
 	"transition": {
 		"opacityOut": "opacity --transitionDuration-normal --transitionTimingFunction-easeOut",
 		"transformOut": "transform --transitionDuration-normal --transitionTimingFunction-easeOut",
-		"transformInOut": "transform --transitionDuration-normal --transitionTimingFunction-easeInOut"
+		"transformInOut": "transform --transitionDuration-normal --transitionTimingFunction-easeOut 0s"
 	},
 	"transitionTimingFunction": {
 		"easeIn": "cubic-bezier(0.4, 0, 1, 1)",
@@ -175,5 +175,5 @@ export default {
 			}
 		}
 	},
-	"version": 1
+	"version": 2
 }
