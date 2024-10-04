@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Box, Text, Icon, List, Section, Button } from "@quarkly/widgets";
+import { Theme, Link, Image, Box, Text, Icon, List, Section, Button, Input } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
@@ -262,8 +262,273 @@ export default (() => {
 				Button
 			</Button>
 		</Section>
-		<Components.QuarklycommunityKitMenu />
 		<Components.QuarklycommunityKitCollapse />
+		<Section
+			padding="100px 0"
+			sm-padding="40px 0"
+			sm-min-height="auto"
+			display="flex"
+			background="rgba(0, 0, 0, 0) radial-gradient(circle at center,#021946 0%,#000000 100%) 0% 0% /auto repeat scroll padding-box"
+			quarkly-title="Advantages/Features-30"
+		>
+			<Override
+				slot="SectionContent"
+				flex-direction="row"
+				flex-wrap="wrap"
+				grid-gap="5%"
+				padding="60px 40px"
+				sm-padding="30px 30px 60px 30px"
+				background="rgba(255, 255, 255, 0.06) radial-gradient(circle at center,rgba(255, 255, 255, 0.01) 0%,rgba(255, 255, 255, 0.02) 100%)"
+				border-radius="30px"
+				border-width="1px"
+				border-style="solid"
+				border-color="rgba(255, 255, 255, 0.03)"
+			/>
+			<Box
+				display="flex"
+				flex="0 0 40%"
+				lg-flex="1 1 100%"
+				justify-content="flex-end"
+				overflow-y="hidden"
+				overflow-x="hidden"
+				lg-width="100%"
+				align-items="center"
+				lg-justify-content="flex-start"
+				lg-padding="0px 0px 0px 0px"
+			>
+				<Image
+					height="23em"
+					width="23em"
+					min-height="260px"
+					lg-width="auto"
+					lg-height="auto"
+					object-fit="cover"
+					src="https://images.unsplash.com/photo-1508011868393-d6513e812e5c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000"
+					display="block"
+					border-radius="20px"
+					srcSet="https://images.unsplash.com/photo-1508011868393-d6513e812e5c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=500 500w,https://images.unsplash.com/photo-1508011868393-d6513e812e5c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800 800w,https://images.unsplash.com/photo-1508011868393-d6513e812e5c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1080 1080w,https://images.unsplash.com/photo-1508011868393-d6513e812e5c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600 1600w,https://images.unsplash.com/photo-1508011868393-d6513e812e5c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000 2000w,https://images.unsplash.com/photo-1508011868393-d6513e812e5c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2600 2600w,https://images.unsplash.com/photo-1508011868393-d6513e812e5c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3200 3200w"
+					sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
+				/>
+			</Box>
+			<Box
+				display="flex"
+				flex="1 1 55%"
+				flex-direction="column"
+				justify-content="flex-start"
+				lg-width="100%"
+				lg-align-items="flex-start"
+				lg-margin="0"
+				padding="30px 0px 0 0"
+				lg-flex-direction="row"
+				lg-flex-wrap="wrap"
+			>
+				<Text
+					as="h1"
+					margin="0px"
+					font="normal 600 2.3em/1.5 --fontFamily-sans"
+					color="--light"
+					width="100%"
+					md-width="100%"
+					md-margin="0px 0px 26px 0px"
+					md-padding="0px 0px 0px 0px"
+					sm-font="normal 600 30px/1.2 --fontFamily-sans"
+				>
+					Join our team
+				</Text>
+				<Text
+					as="p"
+					margin="1.2em 0 0 0"
+					font="normal 100 20px/1.5 --fontFamily-sans"
+					font-size="1.2em"
+					font-weight="300"
+					color="--light"
+					width="100%"
+					md-width="100%"
+					md-margin="0px 0px 0px 0px"
+					md-padding="0px 0px 0px 0px"
+					lg-max-width="640px"
+				>
+					Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</Text>
+				<Box
+					display="flex"
+					flex-direction="row"
+					grid-gap="18px"
+					margin="30px 0px 0px 0px"
+					font="400 1.1em --fontFamily-sans"
+					lg-width="100%"
+					lg-justify-content="flex-start"
+					flex-wrap="wrap"
+					color="--light"
+					sm-margin="24px 0 0 0"
+					lg-margin="32px 0px 0px 0px"
+				>
+					<List
+						as="ul"
+						padding="0"
+						margin="0"
+						list-style-type="none"
+						display="flex"
+						flex-direction="column"
+						grid-gap="18px"
+						lg-max-width="640px"
+					>
+						<Box margin="0px 0px 0px 0px" display="flex" grid-gap="10px">
+							<Icon display="block" category="md" icon={MdCheckCircle} size="20px" />
+							<Text padding="0" margin="0">
+								Competitive salaries.
+							</Text>
+						</Box>
+						<Box margin="0px 0px 0px 0px" display="flex" grid-gap="10px">
+							<Icon display="block" category="md" icon={MdCheckCircle} size="20px" />
+							<Text padding="0" margin="0">
+								30 days of paid vacation
+							</Text>
+						</Box>
+						<Box margin="0px 0px 0px 0px" display="flex" grid-gap="10px">
+							<Icon display="block" category="md" icon={MdCheckCircle} size="20px" />
+							<Text padding="0" margin="0">
+								Benefits for you and your family
+							</Text>
+						</Box>
+					</List>
+					<List
+						as="ul"
+						padding="0"
+						margin="0"
+						list-style-type="none"
+						display="flex"
+						flex-direction="column"
+						grid-gap="18px"
+						lg-max-width="640px"
+					>
+						<Box margin="0px 0px 0px 0px" display="flex" grid-gap="10px">
+							<Icon display="block" category="md" icon={MdCheckCircle} size="20px" />
+							<Text padding="0" margin="0">
+								Flexible work hours
+							</Text>
+						</Box>
+						<Box margin="0px 0px 0px 0px" display="flex" grid-gap="10px">
+							<Icon display="block" category="md" icon={MdCheckCircle} size="20px" />
+							<Text padding="0" margin="0">
+								Annual team retreats
+							</Text>
+						</Box>
+						<Box margin="0px 0px 0px 0px" display="flex" grid-gap="10px">
+							<Icon display="block" category="md" icon={MdCheckCircle} size="20px" />
+							<Text padding="0" margin="0">
+								A great work environment
+							</Text>
+						</Box>
+					</List>
+				</Box>
+				<Link
+					href="#"
+					color="#909dfd"
+					margin="2em 0 0 0"
+					font="500 1.1em --fontFamily-sans"
+					text-decoration-line="initial"
+					display="flex"
+					grid-gap="4px"
+					transition="all 0.3s ease"
+					padding="0"
+					justify-content="flex-start"
+					flex="0 0 auto"
+					order="0"
+					align-self="flex-start"
+					overflow-x="hidden"
+					overflow-y="hidden"
+					lg-margin="2em 0 0 0"
+					align-items="flex-start"
+					hover-border-bottom="1px solid #909dfd"
+				>
+					See our job postings
+					<Icon category="md" icon={MdArrowForward} size="1.1em" />
+				</Link>
+			</Box>
+		</Section>
+		<Input display="block" placeholder-color="LightGray" background="white" />
+		<Section background-color="--dark" text-align="center" padding="32px 0" quarkly-title="Footer-1">
+			<List
+				margin="0px 0px 0px 0px"
+				padding="12px 0px 12px 0px"
+				list-style-type="none"
+				as="ul"
+				display="flex"
+				align-items="center"
+				justify-content="center"
+			>
+				<Link
+					href="#"
+					color="white"
+					padding="6px 12px 6px 12px"
+					text-decoration-line="initial"
+					display="flex"
+					font="20px/30px sans-serif"
+					hover-color="--lightD2"
+					transition="background-color 0.1s ease 0s"
+				>
+					About
+				</Link>
+				<Link
+					href="#"
+					color="white"
+					padding="6px 12px 6px 12px"
+					text-decoration-line="initial"
+					display="flex"
+					font="20px/30px sans-serif"
+					hover-color="--lightD2"
+					transition="background-color 0.1s ease 0s"
+				>
+					Services
+				</Link>
+				<Link
+					href="#"
+					color="white"
+					padding="6px 12px 6px 12px"
+					text-decoration-line="initial"
+					display="flex"
+					font="20px/30px sans-serif"
+					hover-color="--lightD2"
+					transition="background-color 0.1s ease 0s"
+				>
+					Portfolio
+				</Link>
+				<Link
+					href="#"
+					color="white"
+					padding="6px 12px 6px 12px"
+					text-decoration-line="initial"
+					display="flex"
+					font="20px/30px sans-serif"
+					hover-color="--lightD2"
+					transition="background-color 0.1s ease 0s"
+				>
+					Blog
+				</Link>
+				<Link
+					href="#"
+					color="white"
+					padding="6px 12px 6px 12px"
+					text-decoration-line="initial"
+					display="flex"
+					font="20px/30px sans-serif"
+					hover-color="--lightD2"
+					transition="background-color 0.1s ease 0s"
+				>
+					Contacts
+				</Link>
+			</List>
+			<Link
+				href="mailto:hello@company.com"
+				text-decoration-line="none"
+				variant="--base"
+				color="--grey"
+				hover-color="--primary"
+			>
+				hello@company.com
+			</Link>
+		</Section>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}

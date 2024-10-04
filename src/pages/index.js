@@ -1,13 +1,13 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Box, Icon, Strong, Section, Text } from "@quarkly/widgets";
+import { Theme, Link, Image, Box, Strong, Span, Icon, LinkBox, Section, Text } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
-import { TiShoppingCart, TiThMenu } from "react-icons/ti";
-import { MdViewHeadline } from "react-icons/md";
+import { TiThMenu } from "react-icons/ti";
 import { FaShoppingCart } from "react-icons/fa";
+import { MdViewHeadline } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -82,26 +82,11 @@ export default (() => {
 						md-flex-direction="column"
 						md-margin="40px 0px 13px 0px"
 						md-font="--headline4"
+						overflow="visible"
 					>
-						<Icon
-							category="ti"
-							icon={TiShoppingCart}
-							size="64px"
-							color="#ffffff"
-							width="50px"
-							height="50px"
-						/>
-						<Icon
-							category="md"
-							icon={MdViewHeadline}
-							size="64px"
-							color="#ffffff"
-							width="50px"
-							height="50px"
-						/>
 						<Link
 							href="#"
-							font="normal 600 18px/1.5 --fontFamily-googleInter"
+							font="MontserratExtrabold"
 							text-decoration-line="initial"
 							color="--white"
 							margin="0px 20px 0px 20px"
@@ -109,7 +94,20 @@ export default (() => {
 							md-font="--lead"
 							md-color="--indigo"
 						>
-							Inicio
+							<Span
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+								user-select="auto"
+								pointer-events="auto"
+							>
+								<Strong>
+									Inicio
+								</Strong>
+							</Span>
 						</Link>
 						<Link
 							transition="opacity 0.3s ease 0s"
@@ -125,9 +123,20 @@ export default (() => {
 							opacity="0.8"
 							border-color="#91ff7c"
 						>
-							<Strong>
-								APP
-							</Strong>
+							<Span
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+								user-select="auto"
+								pointer-events="auto"
+							>
+								<Strong>
+									APP
+								</Strong>
+							</Span>
 						</Link>
 						<Link
 							color="--lightD1"
@@ -135,14 +144,16 @@ export default (() => {
 							transition="opacity 0.3s ease 0s"
 							md-margin="0px 0px 13px 0px"
 							md-font="--lead"
-							href="tel:0999347470"
+							href="/tienda1"
 							font="--base"
 							opacity="0.8"
 							hover-opacity="1"
 							md-color="--indigo"
 							text-decoration-line="initial"
 						>
-							TIENDA
+							<Strong>
+								TIENDA
+							</Strong>
 						</Link>
 						<Link
 							hover-opacity="1"
@@ -156,40 +167,54 @@ export default (() => {
 							href="#testimonial"
 							text-decoration-line="initial"
 							margin="0px 8px 0px 20px"
+							width="115px"
 						>
 							Contactos
 						</Link>
-						<Icon
-							category="ti"
-							icon={TiThMenu}
-							size="64px"
-							color="#ffffff"
-							width="50px"
-							height="50px"
-							quarkly-title="Menú"
-						/>
-						<Icon
-							category="fa"
-							icon={FaShoppingCart}
-							size="64px"
-							color="#ffffff"
-							padding="0px 0px 0px 0px"
-							width="45px"
-							height="45px"
-							quarkly-title="Carrito de compras"
-						/>
+						<LinkBox
+							quarkly-title="Menú-LinkBox"
+							hover-color="rgba(0, 0, 0, 0.99)"
+							hover-padding="0 0px 0px 0px"
+							hover-margin="20px 0px 0px 0px"
+							hover-background="rgba(0, 0, 0, 0) linear-gradient(0deg,#09112e 0%,transparent 100%) 0 0/auto no-repeat scroll padding-box"
+							hover-border-radius={0}
+							hover-opacity="1"
+						>
+							<Icon
+								category="ti"
+								icon={TiThMenu}
+								size="64px"
+								color="#ffffff"
+								width="40px"
+								height="40px"
+								quarkly-title="Menú"
+							/>
+						</LinkBox>
+						<LinkBox quarkly-title="Carrito de compras-LinkBox" hover-margin="20px 0px 0px 0px" href="/tienda1">
+							<Icon
+								category="fa"
+								icon={FaShoppingCart}
+								size="64px"
+								color="#ffffff"
+								padding="0px 0px 0px 0px"
+								width="35px"
+								height="35px"
+								quarkly-title="Carrito de compras"
+							/>
+						</LinkBox>
 					</Box>
 				</Components.QuarklycommunityKitMobileSidePanel>
 			</Box>
 		</Section>
 		<Section
-			background="url(https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Found-Green.png?v=2024-09-21T12:59:14.462Z)"
+			background="linear-gradient(0deg,#000000 0%,#9AD36E 92.4%)"
 			padding="36px 0 200px 0"
 			quarkly-title="HeroBlock"
 			md-padding="36px 0 60px 0"
 			sm-padding="36px 0px 60px 0"
 			sm-position="static"
 			lg-padding="36px 0 150px 0"
+			border-color="#000000"
 		>
 			<Override
 				slot="SectionContent"
@@ -198,6 +223,7 @@ export default (() => {
 				z-index="9"
 				md-flex-wrap="wrap"
 				md-z-index="7"
+				margin="0px 0 0px 64px"
 			/>
 			<Box
 				empty-min-width="64px"
@@ -230,8 +256,8 @@ export default (() => {
 					lg-font="normal 700 150px/1.2 &quot;Inter&quot;, sans-serif"
 					md-font="normal 700 28px/1.2 &quot;Inter&quot;, sans-serif"
 					margin="0px 0px 16px 0px"
-					font="--headline1"
-					color="--white"
+					font="normal 700 250px/1.2 --fontFamily-googleInter"
+					color="--light"
 					sm-font="normal 500 30px/1.2 &quot;Inter&quot;, sans-serif"
 					width="786px"
 					lg-padding="0px 0px 0px 0px"
@@ -276,17 +302,17 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
-		<Section background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Found-Green.png?v=2024-09-21T12:59:14.462Z) 0% 0% /auto repeat scroll padding-box" lg-border-color="#79b55d">
+		<Section background="rgba(0, 0, 0, 0) linear-gradient(0deg,#000000 0%,rgba(0,0,0,1) 100%) 0% 0% /auto repeat scroll padding-box" lg-border-color="#79b55d" border-color="#000000">
 			<Box
 				lg-margin="32px 0px 0px 0px"
 				md-width="100%"
 				md-margin="36px 0px 0px 0px"
 				display="flex"
-				margin="02px 0px 0px 0px"
 				flex-direction="row"
 				flex-wrap="no-wrap"
 				align-items="center"
 				justify-content="center"
+				margin="02px 0px 0px 0px"
 			>
 				<Link
 					sm-margin="0px 22px 0px 0px"
@@ -302,17 +328,17 @@ export default (() => {
 					border-radius="10px"
 					lg-font="normal 500 18px/1.6 &quot;Inter&quot;, sans-serif"
 					md-padding="15px 16px 15px 16px"
-					hover-color="--primary"
+					hover-color="--dark"
 					color="--white"
 					margin="0px 0px 0px 50px"
 					lg-padding="15px 23px 15px 23px"
 					md-width="50%"
 					background="--color-grey linear-gradient(0deg,#000000 0%,#000000 100%)"
 					font="--lead"
-					hover-background="--color-white"
+					hover-background="--color-greyD1 linear-gradient(0deg,#DAF7A6 0%,#DAF7A6 100%)"
 					border-width="4px"
 					border-style="solid"
-					border-color="--color-orange"
+					border-color="--color-white"
 					box-shadow="0 0 0px 0 transparent"
 					lg-border-color="#ffffff"
 					lg-color="#ffffff"
@@ -335,7 +361,7 @@ export default (() => {
 					md-text-align="center"
 					sm-padding="15px 13px 15px 13px"
 					text-decoration-line="initial"
-					color="--dark"
+					color="--light"
 					background="rgba(255, 5, 5, 0)"
 					margin="0px 0px 0px 0px"
 					border-color="rgba(255, 255, 255, 0.3)"
@@ -585,6 +611,17 @@ export default (() => {
 					Download Directly
 				</Link>
 			</Box>
+		</Section>
+		<Section background="#020202">
+			<Icon
+				category="md"
+				icon={MdViewHeadline}
+				size="64px"
+				color="#ffffff"
+				width="50px"
+				height="50px"
+				quarkly-title="Carrito de compras"
+			/>
 		</Section>
 		<Link
 			font={"--capture"}
