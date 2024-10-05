@@ -487,6 +487,9 @@ export default (() => {
 						PEDIR YA &gt;&gt;
 					</Button>
 					<Components.QuarklycommunityKitPopup>
+						<Override slot="Button Open" background="--color-orange">
+							Open Popup
+						</Override>
 						<Section
 							padding="100px 0"
 							sm-padding="40px 0"
@@ -512,13 +515,14 @@ export default (() => {
 								display="flex"
 								flex="0 0 40%"
 								lg-flex="1 1 100%"
-								justify-content="flex-end"
+								justify-content="flex-start"
 								overflow-y="hidden"
 								overflow-x="hidden"
 								lg-width="100%"
 								align-items="center"
 								lg-justify-content="flex-start"
 								lg-padding="0px 0px 0px 0px"
+								flex-direction="row"
 							>
 								<Image
 									height="23em"
@@ -527,10 +531,10 @@ export default (() => {
 									lg-width="auto"
 									lg-height="auto"
 									object-fit="cover"
-									src="https://images.unsplash.com/photo-1508011868393-d6513e812e5c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000"
+									src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21:22:05.277Z"
 									display="block"
 									border-radius="20px"
-									srcSet="https://images.unsplash.com/photo-1508011868393-d6513e812e5c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=500 500w,https://images.unsplash.com/photo-1508011868393-d6513e812e5c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800 800w,https://images.unsplash.com/photo-1508011868393-d6513e812e5c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1080 1080w,https://images.unsplash.com/photo-1508011868393-d6513e812e5c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600 1600w,https://images.unsplash.com/photo-1508011868393-d6513e812e5c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000 2000w,https://images.unsplash.com/photo-1508011868393-d6513e812e5c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2600 2600w,https://images.unsplash.com/photo-1508011868393-d6513e812e5c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3200 3200w"
+									srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=3200 3200w"
 									sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
 								/>
 							</Box>
