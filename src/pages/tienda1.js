@@ -26,7 +26,7 @@ export default (() => {
 			<meta name={"msapplication-TileColor"} content={"#000848"} />
 		</Helmet>
 		<Section background-color="--dark" text-align="center" padding="3px 0 0px 0" quarkly-title="Footer-1">
-			<Structure padding="0px 0px 0px 0px" cells-number-total="3" display="flex">
+			<Structure padding="0px 0px 0px 0px">
 				<Override slot="Content">
 					<Override slot="cell-2">
 						<Box min-width="100px" min-height="100px" />
@@ -42,7 +42,7 @@ export default (() => {
 							/>
 						</LinkBox>
 					</Override>
-					<Override slot="Cell 0th" opacity="1" />
+					<Override slot="Cell 0th" />
 					<Override slot="cell-0">
 						<Box min-width="100px" min-height="100px" />
 					</Override>
@@ -438,7 +438,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section background="#111828" padding="90px 0 120px 0" quarkly-title="Test Menu Desplegable">
+		<Section background="#111828" quarkly-title="Test Menu Desplegable" padding="90px 0 120px 0">
 			<Text margin="0px 0px 0px 0px" color="--light" text-align="left" font="600 48px --fontFamily-sans">
 				Our team
 			</Text>
@@ -489,26 +489,27 @@ export default (() => {
 					<Components.QuarklycommunityKitPopup>
 						<Override slot="Button Open" background="#ff4f05" />
 						<Override slot="Wrapper" display="flex" position="relative" top="1000px" />
+						<Override slot="Content" />
 						<Section
-							padding="100px 0"
 							sm-padding="40px 0"
 							sm-min-height="auto"
 							display="flex"
 							background="rgba(0, 0, 0, 0) radial-gradient(circle at center,#021946 0%,#000000 100%) 0% 0% /auto repeat scroll padding-box"
 							quarkly-title="Advantages/Features-30"
+							padding="100px 0 100px 0"
 						>
 							<Override
 								slot="SectionContent"
 								flex-direction="row"
 								flex-wrap="wrap"
 								grid-gap="5%"
-								padding="60px 40px"
 								sm-padding="30px 30px 60px 30px"
 								background="rgba(255, 255, 255, 0.06) radial-gradient(circle at center,rgba(255, 255, 255, 0.01) 0%,rgba(255, 255, 255, 0.02) 100%)"
 								border-radius="30px"
 								border-width="1px"
 								border-style="solid"
 								border-color="rgba(255, 255, 255, 0.03)"
+								padding="60px 40px"
 							/>
 							<Box min-width="100px" min-height="100px" display="flex">
 								<Box
