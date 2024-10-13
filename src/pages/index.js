@@ -13,18 +13,18 @@ export default (() => {
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
 		<Helmet>
 			<title>
-				Help for you — Healthcare without the system
+				IALER
 			</title>
 			<meta name={"description"} content={"Chat with a doctor right from your phone, all day and night. No waiting room or appointment needed."} />
-			<meta property={"og:title"} content={"Help for you — Healthcare without the system"} />
+			<meta property={"og:title"} content={"IALER"} />
 			<meta property={"og:description"} content={"Chat with a doctor right from your phone, all day and night. No waiting room or appointment needed."} />
-			<meta property={"og:image"} content={"https://uploads.quarkly.io/6123949e957019001e284458/images/OGimage.png?v=2021-09-21T16:25:40.647Z"} />
-			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/6123949e957019001e284458/images/favicon.svg?v=2021-09-21T16:18:29.306Z"} type={"image/x-icon"} />
-			<link rel={"apple-touch-icon"} href={"https://uploads.quarkly.io/6123949e957019001e284458/images/favicon152.svg?v=2021-09-21T16:17:59.502Z"} />
-			<link rel={"apple-touch-icon"} sizes={"76x76"} href={"https://uploads.quarkly.io/6123949e957019001e284458/images/favicon152.svg?v=2021-09-21T16:17:59.502Z"} />
-			<link rel={"apple-touch-icon"} sizes={"152x152"} href={"https://uploads.quarkly.io/6123949e957019001e284458/images/favicon152.svg?v=2021-09-21T16:17:59.502Z"} />
-			<link rel={"apple-touch-startup-image"} href={"https://uploads.quarkly.io/6123949e957019001e284458/images/favicon152.svg?v=2021-09-21T16:17:59.502Z"} />
-			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/6123949e957019001e284458/images/favicon270.svg?v=2021-09-21T16:18:07.731Z"} />
+			<meta property={"og:image"} content={"https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/AILER-V4.png?v=2024-09-17T14:26:53.714Z"} />
+			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Gek-Fondo-Transparente-V5.png?v=2024-09-17T14:41:50.894Z"} type={"image/x-icon"} />
+			<link rel={"apple-touch-icon"} href={"https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17:57:59.859Z"} />
+			<link rel={"apple-touch-icon"} sizes={"76x76"} href={"https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17:57:59.859Z"} />
+			<link rel={"apple-touch-icon"} sizes={"152x152"} href={"https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17:57:59.859Z"} />
+			<link rel={"apple-touch-startup-image"} href={"https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17:57:59.859Z"} />
+			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21:22:05.277Z"} />
 			<meta name={"msapplication-TileColor"} content={"#000848"} />
 		</Helmet>
 		<Section background="linear-gradient(264.47deg,#000000 29.39%,#000000 93.49%)" padding="36px 0 36px 0" quarkly-title="Header">
@@ -206,100 +206,51 @@ export default (() => {
 				</Components.QuarklycommunityKitMobileSidePanel>
 			</Box>
 		</Section>
-		<Section
-			background="linear-gradient(0deg,#000000 0%,#9AD36E 92.4%)"
-			padding="36px 0 200px 0"
-			quarkly-title="HeroBlock"
-			md-padding="36px 0 60px 0"
-			sm-padding="36px 0px 60px 0"
-			sm-position="static"
-			lg-padding="36px 0 150px 0"
-			border-color="#000000"
-		>
-			<Override
-				slot="SectionContent"
-				flex-direction="row"
-				position="relative"
-				z-index="9"
-				md-flex-wrap="wrap"
-				md-z-index="7"
-				margin="0px 0 0px 64px"
-			/>
+		<Section background="linear-gradient(0deg,#000000 0%,#9AD36E 92.4%)" padding="36px 0 300px 0" quarkly-title="HeroBlock">
+			<Override slot="SectionContent" display="inline" />
 			<Box
-				empty-min-width="64px"
-				empty-min-height="64px"
-				empty-border-width="1px"
-				empty-border-style="solid"
-				empty-border-color="LightGray"
-				flex-direction="column"
+				min-width="100px"
+				min-height="100px"
+				height="600px"
 				display="flex"
-				align-items="flex-start"
-				lg-padding="0px 90px 0px 0px"
-				md-width="100%"
-				justify-content="center"
-				width="70%"
-				padding="0px 180px 0px 0px"
-				md-padding="0px 0px 0px 0px"
+				lg-align-items="center"
+				lg-flex-direction="column"
+				lg-justify-content="space-between"
+				lg-flex-wrap="no-wrap"
+				lg-overflow="visible"
+				lg-hover-display="flex"
+				pointer-events="auto"
 			>
-				<Text
-					lg-font="normal 400 14px/1.5 &quot;Inter&quot;, sans-serif"
-					margin="0px 0px 8px 0px"
-					color="--dark"
-					lg-text-align="left"
-					font="--base"
-					text-transform="uppercase"
-					lg-margin="0px 0px 8px 0px"
-					sm-font="normal 500 16px/1.6 &quot;Inter&quot;, sans-serif"
-				/>
-				<Text
-					lg-text-align="left"
-					lg-font="normal 700 150px/1.2 &quot;Inter&quot;, sans-serif"
-					md-font="normal 700 28px/1.2 &quot;Inter&quot;, sans-serif"
-					margin="0px 0px 16px 0px"
-					font="normal 700 250px/1.2 --fontFamily-googleInter"
-					color="--light"
-					sm-font="normal 500 30px/1.2 &quot;Inter&quot;, sans-serif"
-					width="786px"
-					lg-padding="0px 0px 0px 0px"
-				>
-					AILER
-				</Text>
-				<Text
-					font="--base"
-					lg-text-align="left"
-					lg-font="normal 400 16px/1.5 &quot;Inter&quot;, sans-serif"
-					md-font="normal 400 14px/1.5 &quot;Inter&quot;, sans-serif"
-					margin="0px 0px 0px 0px"
-					color="--white"
-					opacity="1"
-					width="400px"
-				/>
-			</Box>
-			<Box
-				empty-border-style="solid"
-				width="30%"
-				display="flex"
-				justify-content="flex-end"
-				empty-border-width="1px"
-				empty-min-height="64px"
-				empty-border-color="LightGray"
-				align-items="center"
-				md-width="100%"
-				md-order="-1"
-				empty-min-width="64px"
-			>
-				<Image
-					lg-max-height="400px"
-					width="100%"
-					max-height="450px"
-					md-margin="0px 0px 30px 0px"
-					src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17:11:09.041Z"
-					lg-position="relative"
-					lg-left="-5px"
-					max-width="100%"
-					srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=3200 3200w"
-					sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
-				/>
+				<Box min-width="100px" min-height="100px" height="600px" display="flex">
+					<Text
+						lg-text-align="center"
+						lg-font="normal 700 150px/1.2 &quot;Inter&quot;, sans-serif"
+						md-font="normal 700 28px/1.2 &quot;Inter&quot;, sans-serif"
+						margin="0px 0px 16px 0px"
+						font="normal 700 250px/1.2 --fontFamily-googleInter"
+						color="--light"
+						sm-font="normal 500 30px/1.2 &quot;Inter&quot;, sans-serif"
+						width="786px"
+						lg-padding="0px 0px 0px 0px"
+					>
+						AILER
+					</Text>
+				</Box>
+				<Box min-width="100px" min-height="100px" height="600px" display="flex">
+					<Image
+						lg-max-height="400px"
+						width="500%"
+						max-height="450px"
+						md-margin="0px 0px 30px 0px"
+						src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17:11:09.041Z"
+						lg-position="relative"
+						lg-left="-5px"
+						max-width="100%"
+						height="500px"
+						srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=3200 3200w"
+						sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
+					/>
+				</Box>
 			</Box>
 		</Section>
 		<Section background="rgba(0, 0, 0, 0) linear-gradient(0deg,#000000 0%,rgba(0,0,0,1) 100%) 0% 0% /auto repeat scroll padding-box" lg-border-color="#79b55d" border-color="#000000">

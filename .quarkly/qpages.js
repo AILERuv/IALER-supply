@@ -1,7 +1,7 @@
 module.exports = [
 	"/index/",
-	"/tienda/",
 	"/one-edit/",
+	"/tienda1/",
 	"/tienda1/",
 	"/404/",
 	"/",
