@@ -46,7 +46,7 @@ export default {
 		},
 		"seo": {
 			"favicon_apple_152px": "https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17:57:59.859Z",
-			"favicon_32px": "https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Gek-Fondo-Transparente-V5.png?v=2024-09-17T14:41:50.894Z",
+			"favicon_32px": "https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17:57:59.859Z",
 			"favicon_win10_270px": "https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21:22:05.277Z",
 			"background_win10": "#000848",
 			"og:title": "IALER",
