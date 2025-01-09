@@ -27,7 +27,7 @@ export default (() => {
 			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21:22:05.277Z"} />
 			<meta name={"msapplication-TileColor"} content={"#000848"} />
 		</Helmet>
-		<Section background="linear-gradient(264.47deg,#000000 29.39%,#000000 93.49%)" padding="36px 0 36px 0" quarkly-title="Header">
+		<Section background="linear-gradient(264.47deg,#000000 29.39%,#000000 93.49%)" padding="3px 0 3px 0" quarkly-title="Header">
 			<Override slot="SectionContent" flex-direction="row" />
 			<Box
 				empty-border-width="1px"
@@ -268,7 +268,7 @@ export default (() => {
 				<Link
 					sm-margin="0px 22px 0px 0px"
 					transition="background-color 0.3s --transitionTimingFunction-easeInOut 0s"
-					href="/login"
+					href="/one-edit"
 					text-decoration-line="initial"
 					sm-font="normal 500 18px/1.6 &quot;Inter&quot;, sans-serif"
 					md-font="normal 500 16px/1.6 &quot;Inter&quot;, sans-serif"

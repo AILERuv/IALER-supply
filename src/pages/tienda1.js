@@ -507,7 +507,7 @@ export default (() => {
 							Open Popup
 						</Override>
 						<Section
-							padding="100px 0"
+							padding="90px 0 100px 0"
 							sm-padding="40px 0"
 							sm-min-height="auto"
 							display="flex"
