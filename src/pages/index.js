@@ -206,7 +206,7 @@ export default (() => {
 				</Components.QuarklycommunityKitMobileSidePanel>
 			</Box>
 		</Section>
-		<Section background="linear-gradient(0deg,#000000 0%,#9AD36E 92.4%)" padding="36px 0 300px 0" quarkly-title="HeroBlock">
+		<Section background="linear-gradient(0deg,#000000 0%,#9AD36E 92.4%)" padding="px 0 300px 0" quarkly-title="HeroBlock">
 			<Override slot="SectionContent" display="inline" />
 			<Box
 				min-width="100px"
@@ -319,7 +319,7 @@ export default (() => {
 					sm-font="normal 500 18px/1.6 &quot;Inter&quot;, sans-serif"
 					hover-background="--color-white"
 					hover-color="--indigo"
-					href="/login"
+					href="/tienda1"
 					lg-padding="15px 23px 15px 23px"
 					md-padding="15px 16px 15px 16px"
 				>

@@ -136,6 +136,18 @@ export default (() => {
 				>
 					Contacts
 				</Link>
+				<Link
+					href="/tienda1"
+					color="white"
+					padding="6px 12px 6px 12px"
+					text-decoration-line="initial"
+					display="flex"
+					font="20px/30px sans-serif"
+					hover-color="--lightD2"
+					transition="background-color 0.1s ease 0s"
+				>
+					Tienda
+				</Link>
 			</List>
 			<Hr
 				min-height="10px"
