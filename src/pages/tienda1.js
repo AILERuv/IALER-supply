@@ -75,6 +75,9 @@ export default (() => {
 				display="flex"
 				align-items="center"
 				justify-content="center"
+				sm-overflow="hidden"
+				sm-width="100% border-box"
+				sm-as="ul"
 			>
 				<Link
 					href="#"
@@ -507,7 +510,7 @@ export default (() => {
 							Open Popup
 						</Override>
 						<Section
-							padding="90px 0 100px 0"
+							padding="75px 0 100px 0"
 							sm-padding="40px 0"
 							sm-min-height="auto"
 							display="flex"

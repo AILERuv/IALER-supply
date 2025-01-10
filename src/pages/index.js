@@ -206,7 +206,7 @@ export default (() => {
 				</Components.QuarklycommunityKitMobileSidePanel>
 			</Box>
 		</Section>
-		<Section background="linear-gradient(0deg,#000000 0%,#9AD36E 92.4%)" padding="px 0 300px 0" quarkly-title="HeroBlock">
+		<Section background="linear-gradient(0deg,#000000 0%,#9AD36E 92.4%)" padding="0px 0 0px 0" quarkly-title="HeroBlock">
 			<Override slot="SectionContent" display="inline" />
 			<Box
 				min-width="100px"
@@ -221,7 +221,15 @@ export default (() => {
 				lg-hover-display="flex"
 				pointer-events="auto"
 			>
-				<Box min-width="100px" min-height="100px" height="600px" display="flex">
+				<Box
+					min-width="100px"
+					min-height="100px"
+					height="600px"
+					display="flex"
+					align-items="center"
+					flex-direction="row"
+					justify-content="center"
+				>
 					<Text
 						lg-text-align="center"
 						lg-font="normal 700 150px/1.2 &quot;Inter&quot;, sans-serif"
@@ -236,7 +244,15 @@ export default (() => {
 						AILER
 					</Text>
 				</Box>
-				<Box min-width="100px" min-height="100px" height="600px" display="flex">
+				<Box
+					min-width="100px"
+					min-height="100px"
+					height="600px"
+					display="flex"
+					align-items="center"
+					flex-direction="row"
+					justify-content="center"
+				>
 					<Image
 						lg-max-height="400px"
 						width="500%"

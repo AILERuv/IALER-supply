@@ -30,9 +30,10 @@ export default (() => {
 			<Override slot="SectionContent" padding="0px 0px 60px 0px" background="rgba(0, 0, 0, 0) linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(0, 0, 0, 0.6) 100%) 0% 0% /auto repeat scroll padding-box" />
 			<Components.QuarklycommunityKitPopup>
 				<Override slot="Overlay" padding="0px 0px 0px 0px" />
-				<Override slot="Content" background="#eca312" padding="40 0px 0px 5px" />
+				<Override slot="Content" background="#eca312" padding="50px 0px 0px 5px" />
+				<Override slot="Button Close" />
 				<Section
-					padding="100px 0"
+					padding="10px 0 100px 0"
 					sm-padding="40px 0"
 					sm-min-height="auto"
 					display="flex"
@@ -215,15 +216,6 @@ export default (() => {
 						</Link>
 					</Box>
 				</Section>
-				<Image
-					src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17:11:09.041Z"
-					display="block"
-					quarkly-title="Carga"
-					overflow="visible"
-					height="127px"
-					srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Lag-V7.png?v=2024-09-17T17%3A11%3A09.041Z&quality=85&w=3200 3200w"
-					sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
-				/>
 				<Button text-align="center" type="link">
 					Button
 				</Button>
@@ -555,172 +547,6 @@ export default (() => {
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 				</Text>
 			</Box>
-			<Box
-				display="grid"
-				flex-wrap="wrap"
-				width="100%"
-				align-items="stretch"
-				justify-content="center"
-				grid-template-columns="repeat(3, 1fr)"
-				grid-gap="32px"
-				md-grid-template-columns="1fr"
-				justify-items="center"
-			>
-				<Box
-					width="100%"
-					display="flex"
-					padding="48px 40px 56px 40px"
-					background="--color-light"
-					border-radius="24px"
-					align-items="center"
-					justify-content="flex-start"
-					flex-direction="column"
-					lg-padding="48px 35px 56px 35px"
-				>
-					<Text margin="0px 0px 24px 0px" font="--headline3">
-						Monopoly
-					</Text>
-					<Text margin="0px 0px 8px 0px" font="--headline1">
-						$59
-					</Text>
-					<Text margin="0px 0px 32px 0px" color="--greyD2" text-align="center" font="--base">
-						per month
-					</Text>
-					<Text
-						margin="0px 0px 48px 0px"
-						color="--greyD2"
-						text-align="center"
-						font="--base"
-						flex="1 1 auto"
-					>
-						Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at
-					</Text>
-					<Link
-						href="#"
-						text-decoration-line="initial"
-						color="--dark"
-						font="--lead"
-						padding="12px 24px 12px 24px"
-						border-radius="8px"
-						background="--color-secondary"
-						lg-padding="12px 20px 12px 20px"
-						transition="background-color 0.2s ease-in-out 0s"
-						hover-transition="background-color 0.2s ease-in-out 0s"
-						hover-background="--color-orange"
-					>
-						Select plan
-					</Link>
-				</Box>
-				<Box
-					width="100%"
-					display="flex"
-					padding="48px 40px 56px 40px"
-					background="--color-light"
-					border-radius="24px"
-					align-items="center"
-					justify-content="flex-start"
-					flex-direction="column"
-					border-width="2px"
-					border-style="solid"
-					border-color="--color-secondary"
-					lg-padding="48px 35px 56px 35px"
-					position="relative"
-				>
-					<Text
-						padding="1px 26px 5px 24px"
-						color="#04080C"
-						background="--color-secondary"
-						font="--base"
-						position="absolute"
-						transform="rotate(90deg)"
-						right="-38px"
-						left="auto"
-						top="70px"
-						bottom="auto"
-						border-radius="0px 0px 12px 12px"
-					>
-						Popular
-					</Text>
-					<Text margin="0px 0px 24px 0px" font="--headline3">
-						Startup
-					</Text>
-					<Text margin="0px 0px 8px 0px" font="--headline1">
-						$12
-					</Text>
-					<Text margin="0px 0px 32px 0px" color="--greyD2" text-align="center" font="--base">
-						per month
-					</Text>
-					<Text
-						margin="0px 0px 48px 0px"
-						color="--greyD2"
-						text-align="center"
-						font="--base"
-						flex="1 1 auto"
-					>
-						Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at
-					</Text>
-					<Link
-						href="#"
-						text-decoration-line="initial"
-						color="--dark"
-						font="--lead"
-						padding="12px 24px 12px 24px"
-						border-radius="8px"
-						background="--color-secondary"
-						lg-padding="12px 20px 12px 20px"
-						transition="background-color 0.2s ease-in-out 0s"
-						hover-transition="background-color 0.2s ease-in-out 0s"
-						hover-background="--color-orange"
-					>
-						Select plan
-					</Link>
-				</Box>
-				<Box
-					width="100%"
-					display="flex"
-					padding="48px 40px 56px 40px"
-					background="--color-light"
-					border-radius="24px"
-					align-items="center"
-					justify-content="flex-start"
-					flex-direction="column"
-					lg-padding="48px 35px 56px 35px"
-				>
-					<Text margin="0px 0px 24px 0px" font="--headline3">
-						Freelance
-					</Text>
-					<Text margin="0px 0px 8px 0px" font="--headline1">
-						$9
-					</Text>
-					<Text margin="0px 0px 32px 0px" color="--greyD2" text-align="center" font="--base">
-						per month
-					</Text>
-					<Text
-						margin="0px 0px 48px 0px"
-						color="--greyD2"
-						text-align="center"
-						font="--base"
-						flex="1 1 auto"
-					>
-						Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at
-					</Text>
-					<Link
-						href="#"
-						text-decoration-line="initial"
-						color="--dark"
-						font="--lead"
-						padding="12px 24px 12px 24px"
-						border-radius="8px"
-						background="--color-secondary"
-						lg-padding="12px 20px 12px 20px"
-						transition="background-color 0.2s ease-in-out 0s"
-						hover-transition="background-color 0.2s ease-in-out 0s"
-						hover-background="--color-orange"
-					>
-						Select plan
-					</Link>
-				</Box>
-			</Box>
 		</Section>
 		<Section
 			color="--light"
@@ -957,6 +783,177 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
+		<Components.QuarklycommunityKitMarquee align-items="center" flex-direction="row-reverse" justify-content="center">
+			<Box
+				display="grid"
+				flex-wrap="wrap"
+				width="100%"
+				align-items="stretch"
+				justify-content="center"
+				grid-template-columns="repeat(3, 1fr)"
+				grid-gap="32px"
+				md-grid-template-columns="1fr"
+				justify-items="center"
+			>
+				<Box
+					width="100%"
+					display="flex"
+					padding="48px 40px 56px 40px"
+					background="--color-light"
+					border-radius="24px"
+					align-items="center"
+					justify-content="flex-start"
+					flex-direction="column"
+					lg-padding="48px 35px 56px 35px"
+				>
+					<Text margin="0px 0px 24px 0px" font="--headline3">
+						Monopoly
+					</Text>
+					<Text margin="0px 0px 8px 0px" font="--headline1">
+						$59
+					</Text>
+					<Text margin="0px 0px 32px 0px" color="--greyD2" text-align="center" font="--base">
+						per month
+					</Text>
+					<Text
+						margin="0px 0px 48px 0px"
+						color="--greyD2"
+						text-align="center"
+						font="--base"
+						flex="1 1 auto"
+					>
+						Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at
+					</Text>
+					<Link
+						href="#"
+						text-decoration-line="initial"
+						color="--dark"
+						font="--lead"
+						padding="12px 24px 12px 24px"
+						border-radius="8px"
+						background="--color-secondary"
+						lg-padding="12px 20px 12px 20px"
+						transition="background-color 0.2s ease-in-out 0s"
+						hover-transition="background-color 0.2s ease-in-out 0s"
+						hover-background="--color-orange"
+					>
+						Select plan
+					</Link>
+				</Box>
+				<Box
+					width="100%"
+					display="flex"
+					padding="48px 40px 56px 40px"
+					background="--color-light"
+					border-radius="24px"
+					align-items="center"
+					justify-content="flex-start"
+					flex-direction="column"
+					border-width="2px"
+					border-style="solid"
+					border-color="--color-secondary"
+					lg-padding="48px 35px 56px 35px"
+					position="relative"
+				>
+					<Text
+						padding="1px 26px 5px 24px"
+						color="#04080C"
+						background="--color-secondary"
+						font="--base"
+						position="absolute"
+						transform="rotate(90deg)"
+						right="-38px"
+						left="auto"
+						top="70px"
+						bottom="auto"
+						border-radius="0px 0px 12px 12px"
+					>
+						Popular
+					</Text>
+					<Text margin="0px 0px 24px 0px" font="--headline3">
+						Startup
+					</Text>
+					<Text margin="0px 0px 8px 0px" font="--headline1">
+						$12
+					</Text>
+					<Text margin="0px 0px 32px 0px" color="--greyD2" text-align="center" font="--base">
+						per month
+					</Text>
+					<Text
+						margin="0px 0px 48px 0px"
+						color="--greyD2"
+						text-align="center"
+						font="--base"
+						flex="1 1 auto"
+					>
+						Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at
+					</Text>
+					<Link
+						href="#"
+						text-decoration-line="initial"
+						color="--dark"
+						font="--lead"
+						padding="12px 24px 12px 24px"
+						border-radius="8px"
+						background="--color-secondary"
+						lg-padding="12px 20px 12px 20px"
+						transition="background-color 0.2s ease-in-out 0s"
+						hover-transition="background-color 0.2s ease-in-out 0s"
+						hover-background="--color-orange"
+					>
+						Select plan
+					</Link>
+				</Box>
+				<Box
+					width="100%"
+					display="flex"
+					padding="48px 40px 56px 40px"
+					background="--color-light"
+					border-radius="24px"
+					align-items="center"
+					justify-content="flex-start"
+					flex-direction="column"
+					lg-padding="48px 35px 56px 35px"
+				>
+					<Text margin="0px 0px 24px 0px" font="--headline3">
+						Freelance
+					</Text>
+					<Text margin="0px 0px 8px 0px" font="--headline1">
+						$9
+					</Text>
+					<Text margin="0px 0px 32px 0px" color="--greyD2" text-align="center" font="--base">
+						per month
+					</Text>
+					<Text
+						margin="0px 0px 48px 0px"
+						color="--greyD2"
+						text-align="center"
+						font="--base"
+						flex="1 1 auto"
+					>
+						Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at
+					</Text>
+					<Link
+						href="#"
+						text-decoration-line="initial"
+						color="--dark"
+						font="--lead"
+						padding="12px 24px 12px 24px"
+						border-radius="8px"
+						background="--color-secondary"
+						lg-padding="12px 20px 12px 20px"
+						transition="background-color 0.2s ease-in-out 0s"
+						hover-transition="background-color 0.2s ease-in-out 0s"
+						hover-background="--color-orange"
+					>
+						Select plan
+					</Link>
+				</Box>
+			</Box>
+			<Image src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=200" display="block" srcSet="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=500 500w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=800 800w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1080 1080w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600 1600w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000 2000w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2600 2600w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=3200 3200w" sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw" />
+			<Image src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=200" display="block" srcSet="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=500 500w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=800 800w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1080 1080w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600 1600w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000 2000w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2600 2600w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=3200 3200w" sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw" />
+			<Image src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=200" display="block" srcSet="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=500 500w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=800 800w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1080 1080w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600 1600w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000 2000w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2600 2600w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=3200 3200w" sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw" />
+		</Components.QuarklycommunityKitMarquee>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
