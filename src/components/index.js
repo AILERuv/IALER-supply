@@ -1,4 +1,5 @@
-export { default as QuarklycommunityKitMobileSidePanel } from "./QuarklycommunityKitMobileSidePanel"
-export { default as QuarklycommunityKitMarquee } from "./QuarklycommunityKitMarquee"
+export { default as A1 } from "./A1"
 export { default as QuarklycommunityKitCarousel } from "./QuarklycommunityKitCarousel"
 export { default as QuarklycommunityKitPopup } from "./QuarklycommunityKitPopup"
+export { default as QuarklycommunityKitMobileSidePanel } from "./QuarklycommunityKitMobileSidePanel"
+export { default as QuarklycommunityKitMarquee } from "./QuarklycommunityKitMarquee"

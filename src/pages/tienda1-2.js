@@ -4,7 +4,6 @@ import { Theme, Link, Box, Image, LinkBox, Structure, List, Hr, Section, Icon, T
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
-import * as Components from "components";
 import { BsFillPersonFill, BsClock } from "react-icons/bs";
 import { IoLogoDropbox, IoIosArrowRoundForward, IoMdPeople, IoIosTrash } from "react-icons/io";
 export default (() => {
@@ -78,7 +77,7 @@ export default (() => {
 				justify-content="center"
 			>
 				<Link
-					href="#"
+					href="/404"
 					color="white"
 					padding="6px 12px 6px 12px"
 					text-decoration-line="initial"
@@ -90,7 +89,7 @@ export default (() => {
 					About
 				</Link>
 				<Link
-					href="#"
+					href="/404"
 					color="white"
 					padding="6px 12px 6px 12px"
 					text-decoration-line="initial"
@@ -126,7 +125,7 @@ export default (() => {
 					Blog
 				</Link>
 				<Link
-					href="#"
+					href="/one-edit"
 					color="white"
 					padding="6px 12px 6px 12px"
 					text-decoration-line="initial"
@@ -182,31 +181,13 @@ export default (() => {
 					flex-direction="column"
 					justify-content="flex-end"
 					padding="30px 30px 30px 30px"
-					background="linear-gradient(180deg,rgba(4, 8, 12, 0.35) 0%,#000000 100%) 0 0 no-repeat,rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1528543606781-2f6e6857f318?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000) center/cover repeat scroll padding-box"
+					background="linear-gradient(180deg,rgba(4, 8, 12, 0.35) 0%,#000000 100%) 0 0 no-repeat,rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1599012307530-d163bd04ecab?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000) center/cover repeat scroll padding-box"
 					height="500px"
 					width="65%"
 					lg-width="auto"
 					lg-margin="0px 0px 30px 0"
 					lg-height="400px"
 				>
-					<Components.QuarklycommunityKitMarquee display="block">
-						<Override slot="Container" display="flex" />
-						<Image
-							src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=200"
-							display="block"
-							width="500px"
-							srcSet="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=500 500w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=800 800w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1080 1080w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600 1600w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000 2000w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2600 2600w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=3200 3200w"
-							sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
-						/>
-						<Image
-							src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=200"
-							display="block"
-							width="500px"
-							padding="40px 0px 040px 30px"
-							srcSet="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=500 500w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=800 800w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1080 1080w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600 1600w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000 2000w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2600 2600w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=3200 3200w"
-							sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
-						/>
-					</Components.QuarklycommunityKitMarquee>
 					<Box
 						min-width="10px"
 						min-height="10px"
@@ -280,7 +261,7 @@ export default (() => {
 						flex-direction="column"
 						justify-content="flex-end"
 						padding="30px 30px 30px 30px"
-						background="linear-gradient(180deg,rgba(4, 8, 12, 0.35) 0%,#000000 100%) 0 0 no-repeat,rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1560851691-ebb64b584d3d?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) center/cover repeat scroll padding-box"
+						background="linear-gradient(180deg,rgba(4, 8, 12, 0.35) 0%,#000000 100%) 0 0 no-repeat,rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1504532686278-1baa5d6358cf?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) center/cover repeat scroll padding-box"
 						height="250px"
 						lg-height="300px"
 					>
@@ -342,7 +323,7 @@ export default (() => {
 						flex-direction="column"
 						justify-content="flex-end"
 						padding="30px 30px 30px 30px"
-						background="linear-gradient(180deg,rgba(4, 8, 12, 0.35) 0%,#000000 100%) 0 0 no-repeat,rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) center/cover repeat scroll padding-box"
+						background="linear-gradient(180deg,rgba(4, 8, 12, 0.35) 0%,#000000 100%) 0 0 no-repeat,rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1736267740792-e703ee44f3f1?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000) center/cover repeat scroll padding-box"
 						height="250px"
 						lg-height="300px"
 					>

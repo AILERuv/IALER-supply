@@ -85,7 +85,7 @@ export default (() => {
 						overflow="visible"
 					>
 						<Link
-							href="/one-edit"
+							href="/tienda1"
 							font="MontserratExtrabold"
 							text-decoration-line="initial"
 							color="--white"
@@ -112,7 +112,7 @@ export default (() => {
 						<Link
 							transition="opacity 0.3s ease 0s"
 							md-margin="0px 0px 13px 0px"
-							href="#about"
+							href="/404"
 							font="--base"
 							text-decoration-line="initial"
 							hover-opacity="1"
@@ -164,7 +164,7 @@ export default (() => {
 							opacity="0.8"
 							transition="opacity 0.3s ease 0s"
 							md-margin="0px 0px 13px 0px"
-							href="/tienda"
+							href="/one-edit"
 							text-decoration-line="initial"
 							margin="0px 8px 0px 20px"
 							width="115px"

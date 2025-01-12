@@ -80,7 +80,7 @@ export default (() => {
 				sm-as="ul"
 			>
 				<Link
-					href="#"
+					href="/one-edit"
 					color="white"
 					padding="6px 12px 6px 12px"
 					text-decoration-line="initial"
@@ -116,7 +116,7 @@ export default (() => {
 					INICIO
 				</Link>
 				<Link
-					href="#"
+					href="/404"
 					color="white"
 					padding="6px 12px 6px 12px"
 					text-decoration-line="initial"
@@ -141,6 +141,7 @@ export default (() => {
 				</Link>
 			</List>
 		</Section>
+		<Components.A1 />
 		<Section padding="90px 0 120px 0" background="#0B0008" quarkly-title="Team-15">
 			<Box
 				min-width="100px"
@@ -546,10 +547,10 @@ export default (() => {
 								border-color="rgba(255, 255, 255, 0.03)"
 							/>
 							<Box
-								display="flex"
+								display="grid"
 								flex="0 0 40%"
 								lg-flex="1 1 100%"
-								justify-content="flex-start"
+								justify-content="center"
 								overflow-y="hidden"
 								overflow-x="hidden"
 								lg-width="100%"
@@ -557,6 +558,8 @@ export default (() => {
 								lg-justify-content="flex-start"
 								lg-padding="0px 0px 0px 0px"
 								flex-direction="row"
+								flex-wrap="no-wrap"
+								overflow="visible"
 							>
 								<Components.QuarklycommunityKitCarousel
 									display="grid"
@@ -620,8 +623,9 @@ export default (() => {
 								padding="30px 0px 0 0"
 								lg-flex-direction="row"
 								lg-flex-wrap="wrap"
+								overflow="visible"
 							>
-								<Structure cells-number-total="3">
+								<Structure cells-number-total="3" padding="0 0px 0 0px">
 									<Override
 										slot="Content"
 										display="flex"
@@ -681,7 +685,6 @@ export default (() => {
 								</Structure>
 								<Text
 									as="p"
-									margin="1.2em 0 0 0"
 									font="normal 100 20px/1.5 --fontFamily-sans"
 									font-size="1.2em"
 									font-weight="300"
@@ -731,7 +734,7 @@ export default (() => {
 									sm-margin="0px 0px 30px 0px"
 									flex="1 0 auto"
 								>
-									Zapatillas de verano de talla grande 47 para hombre y mujer, sandalias deslizantes de interior de fondo suave EVA para el hogar, zapatos de playa ligeros, zapatillas para hombre, chanclas{"\n\n"}
+									Zapatillas de verano de talla grande 47 para hombre y mujer, sandalias deslizantes de interior de fondo suave EVA para el hogar, zapatos de playa ligeros.
 								</Text>
 								<Hr min-height="10px" min-width="100%" margin="0px 0px 0px 0px" overflow="visible" />
 								<Link
