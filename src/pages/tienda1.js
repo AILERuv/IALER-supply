@@ -1,11 +1,11 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Box, Image, LinkBox, Structure, List, Section, Text, Button, Icon } from "@quarkly/widgets";
+import { Theme, Link, Box, Image, LinkBox, Structure, List, Section, Text, Button, Hr, Icon } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
 import * as Components from "components";
-import { MdCheckCircle, MdArrowForward } from "react-icons/md";
+import { MdArrowForward, MdCheckCircle } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"tienda1"} />
@@ -315,6 +315,13 @@ export default (() => {
 						srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=3200 3200w"
 						sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
 					/>
+					<Image
+						src="https://uploads.quarkly.io/612695d67f2b1f001fa06c1f/images/favourite-31.png?v=2021-08-30T20:05:47.446Z"
+						quarkly-title="Starts_5"
+						width="160px"
+						srcSet="https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/favourite-31.png?v=2021-08-30T20%3A05%3A47.446Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/favourite-31.png?v=2021-08-30T20%3A05%3A47.446Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/favourite-31.png?v=2021-08-30T20%3A05%3A47.446Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/favourite-31.png?v=2021-08-30T20%3A05%3A47.446Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/favourite-31.png?v=2021-08-30T20%3A05%3A47.446Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/favourite-31.png?v=2021-08-30T20%3A05%3A47.446Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/favourite-31.png?v=2021-08-30T20%3A05%3A47.446Z&quality=85&w=3200 3200w"
+						sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
+					/>
 					<Text margin="25px 0px 0px 0px" color="--light" font="600 18px --fontFamily-sans">
 						Leslie Alexander
 					</Text>
@@ -332,6 +339,13 @@ export default (() => {
 						width="100%"
 						border-radius="18px"
 						srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=3200 3200w"
+						sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
+					/>
+					<Image
+						src="https://uploads.quarkly.io/612695d67f2b1f001fa06c1f/images/startfavorite.png?v=2021-08-30T20:09:22.144Z"
+						quarkly-title="Starts_4"
+						width="160px"
+						srcSet="https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/startfavorite.png?v=2021-08-30T20%3A09%3A22.144Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/startfavorite.png?v=2021-08-30T20%3A09%3A22.144Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/startfavorite.png?v=2021-08-30T20%3A09%3A22.144Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/startfavorite.png?v=2021-08-30T20%3A09%3A22.144Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/startfavorite.png?v=2021-08-30T20%3A09%3A22.144Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/startfavorite.png?v=2021-08-30T20%3A09%3A22.144Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/startfavorite.png?v=2021-08-30T20%3A09%3A22.144Z&quality=85&w=3200 3200w"
 						sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
 					/>
 					<Text margin="25px 0px 0px 0px" color="--light" font="600 18px --fontFamily-sans">
@@ -486,8 +500,321 @@ export default (() => {
 				sm-grid-template-rows="auto"
 				display="grid"
 				grid-auto-flow="column"
+				sm-display="grid"
 			>
 				<Box min-width="100px" min-height="100px" display="flex" flex-direction="column">
+					<Image
+						src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21:22:05.277Z"
+						display="block"
+						width="100%"
+						border-radius="18px"
+						srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=3200 3200w"
+						sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
+					/>
+					<Text margin="25px 0px 0px 0px" color="--light" font="600 18px --fontFamily-sans">
+						Leslie Alexander
+					</Text>
+					<Text margin="8px 0px 0px 0px" color="#b2bdc6" font="300 18px --fontFamily-sansHelvetica">
+						Co-Founder / CEO
+					</Text>
+					<Text margin="6px 0px 0px 0px" color="#6a7181" font="300 16px --fontFamily-sansHelvetica">
+						Toronto, Canada
+					</Text>
+					<Components.QuarklycommunityKitPopup display="grid">
+						<Override slot="Button Open" background="--color-orange">
+							Open Popup
+						</Override>
+						<Section
+							padding="75px 0 100px 0"
+							sm-padding="40px 0"
+							sm-min-height="auto"
+							display="flex"
+							background="rgba(0, 0, 0, 0) radial-gradient(circle at center,#021946 0%,#000000 100%) 0% 0% /auto repeat scroll padding-box"
+							quarkly-title="Advantages/Features-30"
+						>
+							<Override
+								slot="SectionContent"
+								flex-direction="row"
+								flex-wrap="wrap"
+								grid-gap="5%"
+								padding="60px 40px"
+								sm-padding="30px 30px 60px 30px"
+								background="rgba(255, 255, 255, 0.06) radial-gradient(circle at center,rgba(255, 255, 255, 0.01) 0%,rgba(255, 255, 255, 0.02) 100%)"
+								border-radius="30px"
+								border-width="1px"
+								border-style="solid"
+								border-color="rgba(255, 255, 255, 0.03)"
+							/>
+							<Box
+								display="flex"
+								flex="0 0 40%"
+								lg-flex="1 1 100%"
+								justify-content="flex-start"
+								overflow-y="hidden"
+								overflow-x="hidden"
+								lg-width="100%"
+								align-items="center"
+								lg-justify-content="flex-start"
+								lg-padding="0px 0px 0px 0px"
+								flex-direction="row"
+							>
+								<Components.QuarklycommunityKitCarousel
+									display="grid"
+									overflow-x="hidden"
+									overflow-y="hidden"
+									position="relative"
+									autoPlay
+									autoPlayBehavior="range"
+									showHead={false}
+									showLink={false}
+									showText={false}
+									showArrows
+									showDots
+									durationProp="2s"
+									functionProp="linear"
+									autoPlayDelayProp="1"
+									slidesWrapper="box"
+									autoPlayIntervalProp="8985"
+								>
+									<Override slot="Slide Image" src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21:22:05.277Z" display="block" />
+									<Override slot="Slide Text" display="none" />
+									<Override slot="Slide Link" display="none" />
+									<Override slot="Slide Head" display="none" />
+									<Override slot="Arrow" />
+									<Override slot="Arrow Icon" display="flex" />
+									<Override slot="Point" />
+									<Override slot="Points" display="none" />
+									<Override
+										slot="Slide"
+										display="flex"
+										flex-direction="row"
+										flex-wrap="no-wrap"
+										overflow="visible"
+										align-items="flex-start"
+										justify-content="center"
+										pointer-events="auto"
+									/>
+								</Components.QuarklycommunityKitCarousel>
+								<Image
+									height="23em"
+									width="23em"
+									min-height="260px"
+									lg-width="auto"
+									lg-height="auto"
+									object-fit="cover"
+									src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21:22:05.277Z"
+									display="none"
+									border-radius="20px"
+									srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21%3A22%3A05.277Z&quality=85&w=3200 3200w"
+									sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
+								/>
+							</Box>
+							<Box
+								display="flex"
+								flex="1 1 55%"
+								flex-direction="column"
+								justify-content="flex-start"
+								lg-width="100%"
+								lg-align-items="flex-start"
+								lg-margin="0"
+								padding="30px 0px 0 0"
+								lg-flex-direction="row"
+								lg-flex-wrap="wrap"
+							>
+								<Structure cells-number-total="3">
+									<Override
+										slot="Content"
+										display="flex"
+										align-items="center"
+										flex-direction="row"
+										justify-content="flex-start"
+										flex-wrap="no-wrap"
+										align-content="space-between"
+									>
+										<Override slot="cell-0">
+											<Text
+												as="h1"
+												margin="0px"
+												font="normal 600 2.3em/1.5 --fontFamily-sans"
+												color="--light"
+												width="100%"
+												md-width="100%"
+												md-margin="0px 0px 26px 0px"
+												md-padding="0px 0px 0px 0px"
+												sm-font="normal 600 30px/1.2 --fontFamily-sans"
+											>
+												US $3.12{"\n\n"}
+											</Text>
+										</Override>
+										<Override slot="cell-1">
+											<Text
+												as="h1"
+												margin="0px"
+												font="normal 600 1.8em/1.5 --fontFamily-sans"
+												color="--greyD2"
+												width="100%"
+												md-width="100%"
+												md-margin="0px 0px 26px 0px"
+												md-padding="0px 0px 0px 0px"
+												sm-font="normal 600 30px/1.2 --fontFamily-sans"
+												text-decoration-line="line-through"
+											>
+												US $5.20{"\n\n"}
+											</Text>
+										</Override>
+										<Override slot="cell-2">
+											<Text
+												as="h1"
+												margin="0px"
+												font="normal 600 1.3em/1.5 --fontFamily-sans"
+												color="--red"
+												width="100%"
+												md-width="100%"
+												md-margin="0px 0px 26px 0px"
+												md-padding="0px 0px 0px 0px"
+												sm-font="normal 600 30px/1.2 --fontFamily-sans"
+											>
+												-40% dto.{"\n\n"}
+											</Text>
+										</Override>
+									</Override>
+								</Structure>
+								<Text
+									as="p"
+									margin="1.2em 0 0 0"
+									font="normal 100 20px/1.5 --fontFamily-sans"
+									font-size="1.2em"
+									font-weight="300"
+									color="--light"
+									width="100%"
+									md-width="100%"
+									md-margin="0px 0px 0px 0px"
+									md-padding="0px 0px 0px 0px"
+									lg-max-width="640px"
+								>
+									Precio mostrado antes de impuestos 3% de descuento extra{"\n\n"}
+								</Text>
+								<Box
+									min-width="100px"
+									min-height="30px"
+									background="rgba(255, 0, 0, 0.2) linear-gradient(0deg,rgba(0, 0, 0, 0.31) 0%,rgba(255, 0, 0, 0) 100%)"
+									height="1px"
+									display="flex"
+									overflow="visible"
+									align-items="center"
+									flex-direction="row"
+									justify-content="center"
+									padding="0 0px 0 0px"
+									flex-wrap="no-wrap"
+								>
+									<Text
+										as="p"
+										font="normal 100 20px/1.5 --fontFamily-sans"
+										font-size="1.2em"
+										font-weight="300"
+										color="--light"
+										width="100%"
+										md-width="100%"
+										md-margin="0px 0px 0px 0px"
+										md-padding="0px 0px 0px 0px"
+										lg-max-width="640px"
+										text-align="left"
+									>
+										US $0.82 de descuento acima deUS $24.62{"\n\n"}
+									</Text>
+								</Box>
+								<Text
+									margin="0px 0px 35px 0px"
+									color="--light"
+									font="--lead"
+									lg-margin="0px 0px 50px 0px"
+									sm-margin="0px 0px 30px 0px"
+									flex="1 0 auto"
+								>
+									Zapatillas de verano de talla grande 47 para hombre y mujer, sandalias deslizantes de interior de fondo suave EVA para el hogar, zapatos de playa ligeros, zapatillas para hombre, chanclas{"\n\n"}
+								</Text>
+								<Hr min-height="10px" min-width="100%" margin="0px 0px 0px 0px" overflow="visible" />
+								<Link
+									href="#"
+									color="#909dfd"
+									font="500 1.1em --fontFamily-sans"
+									text-decoration-line="initial"
+									display="flex"
+									grid-gap="4px"
+									transition="all 0.3s ease"
+									padding="0"
+									justify-content="flex-start"
+									flex="0 0 auto"
+									order="0"
+									align-self="flex-start"
+									overflow-x="hidden"
+									overflow-y="hidden"
+									lg-margin="2em 0 0 0"
+									align-items="flex-start"
+									hover-border-bottom="1px solid #909dfd"
+								>
+									See our job postings
+									<Icon category="md" icon={MdArrowForward} size="1.1em" />
+								</Link>
+								<Box
+									display="flex"
+									margin="0px 17px 0px 0px"
+									align-items="flex-start"
+									flex-direction="row"
+									flex-wrap="no-wrap"
+								>
+									<Image
+										width="65px"
+										height="65px"
+										src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17:57:59.859Z"
+										border-radius="50зч"
+										margin="0px 15px 12px 0px"
+										srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=3200 3200w"
+										sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
+									/>
+									<Image
+										width="65px"
+										height="65px"
+										src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17:57:59.859Z"
+										border-radius="50зч"
+										margin="0px 15px 12px 0px"
+										srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=3200 3200w"
+										sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
+									/>
+									<Image
+										width="65px"
+										height="65px"
+										src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17:57:59.859Z"
+										border-radius="50зч"
+										margin="0px 15px 12px 0px"
+										srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=3200 3200w"
+										sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
+									/>
+									<Image
+										width="65px"
+										height="65px"
+										src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17:57:59.859Z"
+										border-radius="50зч"
+										margin="0px 15px 12px 0px"
+										srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=3200 3200w"
+										sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
+									/>
+								</Box>
+								<Hr min-height="10px" min-width="100%" margin="0px 0px 0px 0px" overflow="visible" />
+								<Button>
+									COMPRAR
+								</Button>
+							</Box>
+						</Section>
+					</Components.QuarklycommunityKitPopup>
+				</Box>
+				<Box
+					min-width="100px"
+					min-height="100px"
+					display="flex"
+					flex-direction="column"
+					quarkly-title="BoxDit"
+				>
 					<Image
 						src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub-Orange.png?v=2024-10-01T21:22:05.277Z"
 						display="block"

@@ -1,12 +1,11 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Box, Text, Icon, List, Section, Button, Input, LinkBox } from "@quarkly/widgets";
+import { Theme, Link, Image, Box, Text, Icon, List, Section, Button, Input } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override, Formspree } from "@quarkly/components";
 import * as Components from "components";
-import { MdCheckCircle, MdArrowForward, MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { MdCheckCircle, MdArrowForward } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"one-edit"} />
@@ -441,6 +440,7 @@ export default (() => {
 		</Section>
 		<Input display="block" placeholder-color="LightGray" background="white" />
 		<Section background-color="--dark" text-align="center" padding="32px 0" quarkly-title="Footer-1">
+			<Override slot="SectionContent" sm-overflow="hidden" sm-width="100% border-box" />
 			<List
 				margin="0px 0px 0px 0px"
 				padding="12px 0px 12px 0px"
@@ -449,6 +449,8 @@ export default (() => {
 				display="flex"
 				align-items="center"
 				justify-content="center"
+				sm-overflow="hidden"
+				sm-width="100% border-box"
 			>
 				<Link
 					href="#"
@@ -546,183 +548,6 @@ export default (() => {
 				<Text margin="0px 0px 0px 0px" color="--grey" text-align="center" font="--lead">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 				</Text>
-			</Box>
-		</Section>
-		<Section
-			color="--light"
-			padding="100px 0"
-			sm-padding="40px 0"
-			position="relative"
-			background="linear-gradient(0deg,rgba(25, 30, 34, 0.8) 0%,rgba(25, 30, 34, 0.8) 100%),--color-darkL2 url(https://images.unsplash.com/photo-1547619292-240402b5ae5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80)"
-			quarkly-title="Form-1"
-		>
-			<Box margin="-16px -16px -16px -16px" display="flex" flex-wrap="wrap">
-				<Box padding="16px 16px 16px 16px" width="50%" md-width="100%">
-					<Box>
-						<Box
-							sm-padding="64px 0 0 0"
-							margin="32px 0 0 0"
-							max-width="360px"
-							position="relative"
-							padding="0 0 0 64px"
-						>
-							<Icon
-								size="48px"
-								top="0"
-								left="0"
-								category="md"
-								icon={MdLocationOn}
-								position="absolute"
-							/>
-							<Text as="h4" margin="6px 0" font="--base">
-								Visit us
-							</Text>
-							<Text as="p" margin="6px 0" font="--headline3">
-								4998 Hanover Street, New York, 10011
-							</Text>
-						</Box>
-						<Box
-							position="relative"
-							padding="0 0 0 64px"
-							sm-padding="64px 0 0 0"
-							margin="64px 0 0 0"
-							max-width="360px"
-						>
-							<Icon
-								top="0"
-								left="0"
-								category="md"
-								icon={MdEmail}
-								position="absolute"
-								size="48px"
-							/>
-							<Text font="--base" as="h4" margin="6px 0">
-								Email us
-							</Text>
-							<Text as="p" margin="6px 0" font="--headline3">
-								<Link href="mailto:hello@company.com" text-decoration="none" hover-text-decoration="underline" color="--light">
-									hello@company.com
-								</Link>
-							</Text>
-						</Box>
-						<Box padding="0 0 0 64px" margin="64px 0 0 0" max-width="360px" position="relative">
-							<Icon
-								left="0"
-								category="md"
-								icon={MdPhone}
-								position="absolute"
-								size="48px"
-								top="0"
-							/>
-							<Text font="--base" as="h4" margin="6px 0">
-								Call us
-							</Text>
-							<Text as="p" margin="6px 0" font="--headline3">
-								+1 (234) 567-89-00
-								<br />
-								+1 (234) 567-89-00
-							</Text>
-						</Box>
-						<Box
-							sm-padding="0"
-							margin="48px 0"
-							max-width="360px"
-							position="relative"
-							display="flex"
-							padding="0 0 0 64px"
-						>
-							<LinkBox margin="0px 16px 0px 0px">
-								<Icon
-									width="48px"
-									height="48px"
-									size="24px"
-									background="--color-primary"
-									border-radius="50%"
-									category="fa"
-									icon={FaFacebookF}
-									color="--light"
-									margin="0px 0px 0px 0px"
-								/>
-							</LinkBox>
-							<LinkBox margin="0px 16px 0px 0px">
-								<Icon
-									background="--color-primary"
-									border-radius="50%"
-									category="fa"
-									icon={FaTwitter}
-									width="48px"
-									height="48px"
-									size="24px"
-									color="--light"
-									margin="0px 0px 0px 0px"
-								/>
-							</LinkBox>
-							<LinkBox margin="0px 16px 0px 0px">
-								<Icon
-									category="fa"
-									icon={FaLinkedinIn}
-									width="48px"
-									height="48px"
-									size="24px"
-									background="--color-primary"
-									border-radius="50%"
-									color="--light"
-									margin="0px 0px 0px 0px"
-								/>
-							</LinkBox>
-						</Box>
-					</Box>
-				</Box>
-				<Box width="50%" padding="8px 8px 8px 8px" md-width="100%">
-					<Box>
-						<Box
-							padding="56px 48px"
-							margin="0 0 0 auto"
-							md-max-width="100%"
-							background="--color-primary"
-							max-width="360px"
-						>
-							<Text as="h3" font="--headline3" margin="0 0 20px 0">
-								Leave us message
-							</Text>
-							<Formspree endpoint="xeqpgrlv">
-								<Box gap="16px" display="flex" flex-direction="row" flex-wrap="wrap">
-									<Box padding="8px 8px 8px 8px" width="100%">
-										<Box display="flex" flex-direction="column">
-											<Text margin="0 0 4px 0" font="--base">
-												Name
-											</Text>
-											<Input max-width="400px" width="100%" name="name" />
-										</Box>
-									</Box>
-									<Box width="100%" padding="8px 8px 8px 8px">
-										<Box display="flex" flex-direction="column">
-											<Text font="--base" margin="0 0 4px 0">
-												Email
-											</Text>
-											<Input max-width="400px" width="100%" type="email" name="email" />
-										</Box>
-									</Box>
-									<Box padding="8px 8px 8px 8px" width="100%">
-										<Box display="flex" flex-direction="column">
-											<Text font="--base" margin="0 0 4px 0">
-												Message
-											</Text>
-											<Input width="100%" name="message" as="textarea" rows="4" />
-										</Box>
-									</Box>
-									<Box width="100%" padding="8px 8px 8px 8px">
-										<Box display="flex" flex-direction="column" align-items="flex-start">
-											<Button background="--color-dark">
-												Send
-											</Button>
-										</Box>
-									</Box>
-								</Box>
-							</Formspree>
-						</Box>
-					</Box>
-				</Box>
 			</Box>
 		</Section>
 		<Section background="--color-light" color="--dark" padding="64px 0 64px 0">
@@ -954,6 +779,60 @@ export default (() => {
 			<Image src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=200" display="block" srcSet="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=500 500w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=800 800w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1080 1080w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600 1600w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000 2000w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2600 2600w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=3200 3200w" sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw" />
 			<Image src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=200" display="block" srcSet="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=500 500w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=800 800w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1080 1080w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600 1600w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000 2000w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2600 2600w,https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=3200 3200w" sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw" />
 		</Components.QuarklycommunityKitMarquee>
+		<Components.QuarklycommunityKitCarousel display="block" autoPlayBehavior="range">
+			<Override slot="Slide Image,Slide Image 3" src="https://images.unsplash.com/photo-1736131660777-8b7aa6bb0efe?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000" />
+			<Override slot="Slide Image,Slide Image 1" src="https://images.unsplash.com/photo-1736131660777-8b7aa6bb0efe?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000" />
+			<Override slot="Slide Image 1" src="https://images.unsplash.com/photo-1736131660777-8b7aa6bb0efe?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000" />
+			<Override
+				slot="Slide Image"
+				src="https://images.unsplash.com/photo-1719937206590-6cb10b099e0f?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000"
+				overflow="visible"
+				disableOptimization
+				pointer-events="none"
+			/>
+		</Components.QuarklycommunityKitCarousel>
+		<Components.QuarklycommunityKitCarousel />
+		<Box
+			padding="50px 55px 50px 55px"
+			sm-padding="55px 40px 50px 55px"
+			border-width="1px"
+			border-style="solid"
+			border-radius="24px"
+			border-color="--color-lightD2"
+			display="flex"
+			flex-direction="column"
+			align-items="flex-start"
+		>
+			<Text
+				margin="0px 0px 35px 0px"
+				color="--dark"
+				font="--lead"
+				lg-margin="0px 0px 50px 0px"
+				sm-margin="0px 0px 30px 0px"
+				flex="1 0 auto"
+			>
+				“Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users.”
+			</Text>
+			<Box display="flex" margin="0px 17px 0px 0px" align-items="flex-start" flex-direction="column">
+				<Image
+					width="43px"
+					height="43px"
+					src="https://uploads.quarkly.io/612695d67f2b1f001fa06c1f/images/image4.png?v=2021-08-25T19:47:08.343Z"
+					border-radius="50зч"
+					margin="0px 15px 12px 0px"
+					srcSet="https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/image4.png?v=2021-08-25T19%3A47%3A08.343Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/image4.png?v=2021-08-25T19%3A47%3A08.343Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/image4.png?v=2021-08-25T19%3A47%3A08.343Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/image4.png?v=2021-08-25T19%3A47%3A08.343Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/image4.png?v=2021-08-25T19%3A47%3A08.343Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/image4.png?v=2021-08-25T19%3A47%3A08.343Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/612695d67f2b1f001fa06c1f/images/image4.png?v=2021-08-25T19%3A47%3A08.343Z&quality=85&w=3200 3200w"
+					sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
+				/>
+				<Box>
+					<Text color="--dark" font="normal 600 16px/1.5 --fontFamily-googleSourceSansPro" margin="0px 0px 2px 0px">
+						Mason Johnson
+					</Text>
+					<Text color="--greyD1" font="--base" margin="0px 0px 0px 0px">
+						Manager
+					</Text>
+				</Box>
+			</Box>
+		</Box>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}

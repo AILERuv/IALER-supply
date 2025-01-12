@@ -229,6 +229,9 @@ export default (() => {
 					align-items="center"
 					flex-direction="row"
 					justify-content="center"
+					lg-overflow="hidden"
+					sm-overflow="visible"
+					sm-display="flex"
 				>
 					<Text
 						lg-text-align="center"
@@ -240,8 +243,33 @@ export default (() => {
 						sm-font="normal 500 30px/1.2 &quot;Inter&quot;, sans-serif"
 						width="786px"
 						lg-padding="0px 0px 0px 0px"
+						sm-text-align="center"
+						sm-padding="50px 0px 50px 0px"
+						sm-display="flex"
+						sm-height="auto"
+						sm-width="auto"
 					>
-						AILER
+						<Span
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+							user-select="auto"
+							pointer-events="auto"
+							sm-display="inline"
+							sm-height="100% border-box"
+							sm-width="100% border-box"
+							sm-min-height="100%"
+							sm-min-width="100%"
+							sm-max-width="100%"
+							sm-max-height="100%"
+							sm-font="500 135px/36px Inter, sans-serif"
+							sm-text-align="center"
+						>
+							AILER
+						</Span>
 					</Text>
 				</Box>
 				<Box

@@ -163,6 +163,28 @@ export default (() => {
 				</SocialMedia>
 			</Box>
 		</Section>
+		<Section background="linear-gradient(135deg, #ff8f00, #f7a6b3)" padding="20px 0">
+			<Override
+				slot="SectionContent"
+				display="flex"
+				justify-content="center"
+				align-items="center"
+				flex-direction="column"
+			/>
+			{"    "}
+			<Text font="normal 600 24px/1.5 'Inter', sans-serif" color="--white" margin="0 0 10px">
+				{"    "}Welcome to Ailer!{"\n  "}
+			</Text>
+			{"  "}
+			<Image
+				src="https://uploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17:57:59.859Z"
+				width="200px"
+				height="auto"
+				alt="Ailer Image"
+				srcSet="https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/66e9916328b5e30023ac82d0/images/Ailer-Cub.png?v=2024-09-19T17%3A57%3A59.859Z&quality=85&w=3200 3200w"
+				sizes="(max-width: 460px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
+			/>
+		</Section>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
